@@ -60,6 +60,8 @@ function loop() {
 	});
 
 	first('ender', '+=' + delaySpeed * 1.5);
+
+	tl.from('#legal', .1, { opacity: 0 }, '-=.1');
 }
 
 loop();

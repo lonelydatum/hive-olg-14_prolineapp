@@ -24,7 +24,7 @@ function deploy(projectName){
         .pipe(replace("takanaClient.run({host: 'localhost:48626'});", ''))
         .pipe(replace("<title>", '<title>Created: '+moment().format('MMM D, h:mm')))
         
-        .pipe(gulp.dest('./deploy/'+projectName));
+        .pipe(gulp.dest('./docs/deploy/'+projectName));
         
         return stream;
 }
@@ -41,9 +41,9 @@ function log_free(projectName){
 
         stream.on('end', function(){
             deploy(projectName).on("end", function(){
-                gulp.src('./deploy/'+projectName+'/**',  { base : "./deploy" })
+                gulp.src('./docs/deploy/'+projectName+'/**',  { base : "./docs/deploy" })
                     .pipe(zip(projectName+'.zip'))
-                    .pipe(gulp.dest('./zips'));
+                    .pipe(gulp.dest('./docs/zips'));
                 return;
             })
             return;            
