@@ -1,0 +1,50 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	width: 300px;
+	height: 250px;
+	color: red;
+}
+
+
+#cans{
+	width: 105px;
+	height: 202px;
+	// border: 1px solid red;
+	@include pos(177, 25);
+	overflow: hidden;
+}
+
+#title{
+	@include pos(20, 47);
+	
+	font-size: 50px;
+	width: 132px;
+	line-height: 40px;
+	letter-spacing: 1.3px;
+	// border: 1px solid yellow;
+}
+
+#sub{
+	@include pos(21, 188);
+	font-size: 13px;
+	color: white;
+}
+
+#legal{
+	@include pos(19, 240);
+	font-size: 5px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+}
