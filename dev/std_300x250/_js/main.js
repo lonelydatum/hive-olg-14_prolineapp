@@ -32,6 +32,7 @@ function first(frameName, delay) {
 }
 
 function loop() {
+	tl.set('.frame1', {opacity:1})
 	first('starter', 0)
 	const delaySpeed = .4
 	cans.forEach((item, index)=>{

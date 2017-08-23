@@ -48,6 +48,7 @@ function first(frameName, delay) {
 }
 
 function loop() {
+	tl.set('.frame1', { opacity: 1 });
 	first('starter', 0);
 	var delaySpeed = .4;
 	_commonJsNFLJs.cans.forEach(function (item, index) {
