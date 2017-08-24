@@ -171,7 +171,12 @@ sup {
   letter-spacing: 1.3px;
 }
 
-#title span {
+#title span.you {
+  position: relative;
+  left: 3px;
+}
+
+#title span.y {
   margin-right: -3px;
 }
 

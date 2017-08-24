@@ -28,8 +28,13 @@
 
 #title{
 	@include pos(20, 47);
-	span{
+	span.you{
+		position: relative;
+		left: 3px;
+	}
+	span.y{
 		margin-right: -3px;
+
 	}
 	font-size: 50px;
 	width: 132px;
