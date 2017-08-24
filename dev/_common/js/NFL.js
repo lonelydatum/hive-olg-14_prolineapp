@@ -1,5 +1,5 @@
 const copy = {
-	title: 'WHO YOU GOT?',
+	title: 'WHO <span>Y</span>OU GOT?',
 	sub: 'NEW NFL TEAM CANS.',
 	legal: 'OFFICIAL NFL SPONSOR. ENJOY RESPONSIBLY. Must be legal drinking age. ®/MD Anheuser-Busch, LLC.'
 }

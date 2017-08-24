@@ -171,6 +171,10 @@ sup {
   letter-spacing: 1.3px;
 }
 
+#title span {
+  margin-right: -3px;
+}
+
 #sub {
   -webkit-transform: translate(21px, 188px);
   -ms-transform: translate(21px, 188px);
