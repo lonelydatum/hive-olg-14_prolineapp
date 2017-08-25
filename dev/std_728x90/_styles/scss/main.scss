@@ -1,0 +1,62 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	width: 728px;
+	height: 90px;
+	
+}
+
+#logo{
+	width: 109px;
+	@include pos(34, 13);
+}
+
+
+#cans{
+	width: 105px;
+	height: 202px;
+	// border: 1px solid red;
+	@include pos-scale(611, -56, .39);
+	overflow: hidden;
+}
+
+#title{
+	@include pos(215, 11);
+	span.you{
+		position: relative;
+		// left: 3px;
+	}
+	span.y{
+		margin-right: -4px;
+
+	}
+	font-size: 47px;
+	// width: 132px;
+	line-height: 40px;
+	letter-spacing: 0.7px;
+	// border: 1px solid yellow;
+}
+
+#sub{
+	@include pos(219, 52);
+	font-size: 23px;
+	color: white;
+}
+
+#legal{
+	@include pos(219, 82);
+	font-size: 5px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+}

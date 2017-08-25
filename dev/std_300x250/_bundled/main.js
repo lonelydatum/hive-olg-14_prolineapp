@@ -1,6 +1,10 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+	value: true
+});
+
 var _NFLJs = require('./NFL.js');
 
 var dom = {
@@ -16,11 +20,14 @@ tl.set('.frame1', { opacity: 1 });
 var canFirst = _NFLJs.cans[0];
 _NFLJs.cans.shift();
 
-for (var key in _NFLJs.copy) {
-	var id = key;
-	var text = _NFLJs.copy[id];
-	var _dom = document.getElementById(id);
-	_dom.innerHTML = text;
+function renderWords(copy) {
+
+	for (var key in copy) {
+		var id = key;
+		var text = copy[id];
+		var _dom = document.getElementById(id);
+		_dom.innerHTML = text;
+	}
 }
 
 function first(frameName, delay) {
@@ -34,7 +41,7 @@ function first(frameName, delay) {
 function setItem(item, frameName) {
 	// console.log(item)
 	var x = -item.id * canWidth;
-	console.log(x);
+
 	tl.set(dom.banner, { backgroundColor: '#' + item.bg }, frameName);
 	tl.set(dom.title, { color: '#' + item.color }, frameName);
 	tl.set(dom.sprite, { x: x }, frameName);
@@ -42,7 +49,7 @@ function setItem(item, frameName) {
 
 // setItem(cans[xxx], xxx)
 
-function loop() {
+function play() {
 
 	first('starter', 0);
 	var delaySpeed = .4;
@@ -62,7 +69,10 @@ function loop() {
 	tl.from('#legal', .1, { opacity: 0 }, '-=.1');
 }
 
-loop();
+exports.renderWords = renderWords;
+exports.play = play;
+
+// loop()
 
 },{"./NFL.js":2}],2:[function(require,module,exports){
 'use strict';
@@ -76,7 +86,7 @@ var copy = {
 	legal: 'OFFICIAL NFL SPONSOR. ENJOY RESPONSIBLY. Must be legal drinking age. ®/MD Anheuser-Busch, LLC.'
 };
 
-var cans = [{ id: 0, bg: '0042b0', color: '149be4' }, { id: 1, bg: 'd32f1e', color: '001532', label: 'DENVER BRONCOS' }, { id: 2, bg: '0076b6', color: 'b0b7bc', label: 'DETROIT LIONS' }, { id: 3, bg: 'aa0000', color: 'af925d', label: 'San Francisco 49ers' }, { id: 4, bg: '012352', color: 'a30d2d', label: 'NY GIANTS' }, { id: 5, bg: '0c2e82', color: 'd50a0a', label: 'Buffalo Bills' }, { id: 6, bg: '1c2d25', color: 'FFFFFF', label: 'New York Jets' }, { id: 7, bg: '001532', color: 'd50a0a', label: 'NEW ENGLAND PATRIOTS' }, { id: 8, bg: '000000', color: 'a6aeb0', label: 'OAKLAND RAIDERS' }, { id: 9, bg: 'd3bc8d', color: '000000', label: 'New Orleans Saints' }, { id: 10, bg: '000000', color: 'd32f1e', label: 'Cincinatti  Bengal' }, { id: 11, bg: '001532', color: '69be28', label: 'SEATTLE SEAHAWKS' }, { id: 12, bg: 'a30d2d', color: 'a6aeb0', label: 'Atlanta Falcons' }, { id: 13, bg: '000000', color: '0085ca', label: 'Caroliner Panthers' }, { id: 14, bg: '013369', color: '9ba1a2', label: 'Indianapolis Colts' }];
+var cans = [{ id: 0, bg: '0042b0', color: '149be4' }, { id: 1, bg: 'd32f1e', color: '001532', label: 'DENVER BRONCOS' }, { id: 2, bg: '0076b6', color: 'b0b7bc', label: 'DETROIT LIONS' }, { id: 3, bg: 'aa0000', color: 'af925d', label: 'San Francisco 49ers' }, { id: 4, bg: '012352', color: 'a30d2d', label: 'NY GIANTS' }, { id: 6, bg: '1c2d25', color: 'FFFFFF', label: 'New York Jets' }, { id: 5, bg: '0c2e82', color: 'd50a0a', label: 'Buffalo Bills' }, { id: 7, bg: '001532', color: 'd50a0a', label: 'NEW ENGLAND PATRIOTS' }, { id: 8, bg: '000000', color: 'a6aeb0', label: 'OAKLAND RAIDERS' }, { id: 9, bg: 'd3bc8d', color: '000000', label: 'New Orleans Saints' }, { id: 10, bg: '000000', color: 'd32f1e', label: 'Cincinatti  Bengal' }, { id: 11, bg: '001532', color: '69be28', label: 'SEATTLE SEAHAWKS' }, { id: 12, bg: 'a30d2d', color: 'a6aeb0', label: 'Atlanta Falcons' }, { id: 13, bg: '000000', color: '0085ca', label: 'Caroliner Panthers' }, { id: 14, bg: '013369', color: '9ba1a2', label: 'Indianapolis Colts' }];
 
 exports.copy = copy;
 exports.cans = cans;
@@ -86,7 +96,12 @@ exports.cans = cans;
 
 var _commonJsAnimationJs = require('../../_common/js/Animation.js');
 
-},{"../../_common/js/Animation.js":1}]},{},[3])
+var _commonJsNFLJs = require('../../_common/js/NFL.js');
+
+(0, _commonJsAnimationJs.renderWords)(_commonJsNFLJs.copy);
+(0, _commonJsAnimationJs.play)();
+
+},{"../../_common/js/Animation.js":1,"../../_common/js/NFL.js":2}]},{},[3])
 
 
 //# sourceMappingURL=main.js.map

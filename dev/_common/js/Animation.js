@@ -1,4 +1,4 @@
-import {copy, cans} from './NFL.js'
+import {cans} from './NFL.js'
 
 const dom = {
 	banner: document.getElementById('banner'),
@@ -13,14 +13,16 @@ tl.set('.frame1', {opacity:1})
 const canFirst = cans[0]
 cans.shift()
 
-
-
-for(let key in copy){
-	const id = key
-	const text = copy[id]
-	const dom = document.getElementById(id)
-	dom.innerHTML = text
+function renderWords(copy) {
+	
+	for(let key in copy){
+		const id = key
+		const text = copy[id]
+		const dom = document.getElementById(id)
+		dom.innerHTML = text
+	}
 }
+
 
 function first(frameName, delay) {
 	// const tlFirst = new TimelineMax()
@@ -35,7 +37,7 @@ function first(frameName, delay) {
 function setItem(item, frameName) {
 	// console.log(item)
 	const x = -(item.id)*canWidth
-	console.log(x)
+	
 	tl.set(dom.banner, {backgroundColor:`#${item.bg}`}, frameName)
 	tl.set(dom.title, {color:`#${item.color}`}, frameName)
 	tl.set(dom.sprite, {x:x}, frameName)		
@@ -44,7 +46,7 @@ function setItem(item, frameName) {
 
 // setItem(cans[xxx], xxx)
 
-function loop() {
+function play() {
 	
 	first('starter', 0)
 	const delaySpeed = .4
@@ -67,4 +69,6 @@ function loop() {
 
 }
 
-loop()
+export {renderWords, play}
+
+// loop()
