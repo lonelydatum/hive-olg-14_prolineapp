@@ -161,7 +161,6 @@ sup {
 
 #legal-button {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-family: tg;
   font-size: 10px;
   -webkit-transform: translate(11px, 210px);
   -ms-transform: translate(11px, 210px);
@@ -262,14 +261,22 @@ sup {
 
 #phoneMain #screen {
   opacity: 0;
-  width: 209px;
+  width: 213px;
   height: 222px;
-  -webkit-transform: translate(33px, 103px);
-  -ms-transform: translate(33px, 103px);
-  transform: translate(33px, 103px);
+  -webkit-transform: translate(31px, 103px);
+  -ms-transform: translate(31px, 103px);
+  transform: translate(31px, 103px);
   position: absolute;
   font-size: 20px;
-  background-color: #00a950;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a950+0,001c11+100 */
+  background: #00a950;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00a950 0%, #001c11 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='#001c11',GradientType=0 );
+  /* IE6-9 */
 }
 
 #phoneMain #screen #logo {
