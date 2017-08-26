@@ -1,107 +1,80 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
-Object.defineProperty(exports, '__esModule', {
-	value: true
-});
+function legal() {
 
-var _NFLJs = require('./NFL.js');
+	var legalButton = document.getElementById('legal-button');
+	var legalCopy = document.getElementById('legal-copy');
 
-var dom = {
-	banner: document.getElementById('banner'),
-	title: document.getElementById('title'),
-	sprite: document.getElementById('sprite')
-};
-
-var canWidth = dom.sprite.offsetWidth / 15;
-var tl = new TimelineMax();
-tl.set('.frame1', { opacity: 1 });
-
-var canFirst = _NFLJs.cans[0];
-_NFLJs.cans.shift();
-
-function renderWords(copy) {
-
-	for (var key in copy) {
-		var id = key;
-		var text = copy[id];
-		var _dom = document.getElementById(id);
-		_dom.innerHTML = text;
-	}
-}
-
-function first(frameName, delay) {
-	// const tlFirst = new TimelineMax()
-	tl.add(frameName, delay);
-	tl.set(dom.banner, { backgroundColor: '#' + canFirst.bg }, frameName);
-	tl.set(dom.title, { color: '#' + canFirst.color }, frameName);
-	tl.set(dom.sprite, { x: 0 }, frameName);
-}
-
-function setItem(item, frameName) {
-	// console.log(item)
-	var x = -item.id * canWidth;
-
-	tl.set(dom.banner, { backgroundColor: '#' + item.bg }, frameName);
-	tl.set(dom.title, { color: '#' + item.color }, frameName);
-	tl.set(dom.sprite, { x: x }, frameName);
-}
-
-// setItem(cans[xxx], xxx)
-
-function play() {
-
-	first('starter', 0);
-	var delaySpeed = .4;
-	_NFLJs.cans.forEach(function (item, index) {
-		var frameName = 'frame-' + index;
-		var delay = index === 0 ? '+=' + 1 : '+=' + delaySpeed;
-		tl.add(frameName, delay);
-		setItem(item, frameName);
-
-		// tl.set(dom.banner, {backgroundColor:`#${item.bg}`}, frameName)
-		// tl.set(dom.title, {color:`#${item.color}`}, frameName)
-		// tl.set(dom.sprite, {x:-(index+1)*canWidth}, frameName)		
+	legalButton.addEventListener('mouseover', function () {
+		TweenLite.to(legalCopy, .2, { opacity: 1 });
 	});
 
-	first('ender', '+=' + delaySpeed * 1.5);
-
-	tl.from('#legal', .1, { opacity: 0 }, '-=.1');
+	legalButton.addEventListener('mouseout', function () {
+		TweenLite.to(legalCopy, .2, { opacity: 0 });
+	});
 }
 
-exports.renderWords = renderWords;
-exports.play = play;
+legal();
 
-// loop()
+var tl = new TimelineMax();
 
-},{"./NFL.js":2}],2:[function(require,module,exports){
-'use strict';
+var width = document.getElementById('phone-mask').offsetWidth;
 
-Object.defineProperty(exports, '__esModule', {
-	value: true
-});
-var copy = {
-	title: 'WHO <span class="you"><span class="y">Y</span>OU</span> GOT?',
-	sub: 'NEW NFL TEAM CANS.',
-	legal: 'OFFICIAL NFL SPONSOR. ENJOY RESPONSIBLY. Must be legal drinking age. ®/MD Anheuser-Busch, LLC.'
+TweenLite.defaultEase = Sine.easeOut;
+
+var dom = {
+	phone: document.getElementById('phone'),
+	phoneMain: document.getElementById('phoneMain'),
+	screen: document.getElementById('screen')
 };
 
-var cans = [{ id: 0, bg: '0042b0', color: '149be4' }, { id: 1, bg: 'd32f1e', color: '001532', label: 'DENVER BRONCOS' }, { id: 2, bg: '0076b6', color: 'b0b7bc', label: 'DETROIT LIONS' }, { id: 3, bg: 'aa0000', color: 'af925d', label: 'San Francisco 49ers' }, { id: 4, bg: '012352', color: 'a30d2d', label: 'NY GIANTS' }, { id: 6, bg: '1c2d25', color: 'FFFFFF', label: 'New York Jets' }, { id: 5, bg: '0c2e82', color: 'd50a0a', label: 'Buffalo Bills' }, { id: 7, bg: '001532', color: 'd50a0a', label: 'NEW ENGLAND PATRIOTS' }, { id: 8, bg: '000000', color: 'a6aeb0', label: 'OAKLAND RAIDERS' }, { id: 9, bg: 'd3bc8d', color: '000000', label: 'New Orleans Saints' }, { id: 10, bg: '000000', color: 'd32f1e', label: 'Cincinatti  Bengal' }, { id: 11, bg: '001532', color: '69be28', label: 'SEATTLE SEAHAWKS' }, { id: 12, bg: 'a30d2d', color: 'a6aeb0', label: 'Atlanta Falcons' }, { id: 13, bg: '000000', color: '0085ca', label: 'Caroliner Panthers' }, { id: 14, bg: '013369', color: '9ba1a2', label: 'Indianapolis Colts' }];
+function start() {
+	tl.set('.frame1', { opacity: 1 });
 
-exports.copy = copy;
-exports.cans = cans;
+	tl.add('f1');
+	tl.from(dom.phoneMain, .5, { y: 190 }, 'f1');
+	tl.from("#t1", .5, { opacity: 0, y: '+=80' }, 'f1');
 
-},{}],3:[function(require,module,exports){
-'use strict';
+	tl.add('f2', '+=.3');
+	tl.from("#t1", .5, { x: 125 }, 'f2');
+	tl.from("#t1 span", .5, { clip: 'rect(0px,0px,51px,0px)' }, 'f2');
+	tl.add(rotate(0, 3), 'f2');
+	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
 
-var _commonJsAnimationJs = require('../../_common/js/Animation.js');
+	tl.add('f3', '+=1');
+	tl.to('#t1', .3, { opacity: 0 }, 'f3');
+	tl.from('#t2', .3, { opacity: 0 }, 'f3+=.3');
 
-var _commonJsNFLJs = require('../../_common/js/NFL.js');
+	tl.add(rotate(3, 7), 'f3+=.3');
+	tl.from('#t3', .3, { opacity: 0 }, '+=1');
+	tl.to('#t3', .3, { opacity: 0 }, '+=1');
+	tl.from('#t4', .3, { opacity: 0 });
 
-(0, _commonJsAnimationJs.renderWords)(_commonJsNFLJs.copy);
-(0, _commonJsAnimationJs.play)();
+	tl.add('end', '+=1');
+	tl.to(['#t2', '#t4'], .3, { opacity: 0, y: '-=40' }, 'end');
+	tl.to(dom.phoneMain, .4, { y: -46 }, 'end');
+	tl.to(dom.screen, .6, { opacity: 1 });
+	tl.from('#screen p', .3, { opacity: 0 }, '+=.6');
 
-},{"../../_common/js/Animation.js":1,"../../_common/js/NFL.js":2}]},{},[3])
+	tl.from(['.end'], .3, { opacity: 0 }, '+=.3');
+}
+
+function rotate(from, to) {
+	var tlRotate = new TimelineMax();
+
+	for (var i = from; i <= to; i++) {
+		var x = -i * width;
+		void 0;
+		tlRotate.set(dom.phone, { x: x }, '+=.09');
+	}
+
+	return tlRotate;
+}
+
+start();
+
+},{}]},{},[1])
 
 
 //# sourceMappingURL=main.js.map
