@@ -38,14 +38,14 @@ function start(){
 	tl.add('f2', '+=.3')
 	tl.from("#t1", .5, {x: 125}, 'f2')
 	tl.from("#t1 span", .5, {clip:`rect(0px,0px,51px,0px)`}, 'f2')
-	tl.add(rotate(0, 3), 'f2')
+	tl.add(rotate(0, 5), 'f2')
 	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
 
 	tl.add('f3', '+=1')
 	tl.to('#t1', .3, {opacity:0}, 'f3')
 	tl.from('#t2', .3, {opacity:0}, 'f3+=.3')
 
-	tl.add(rotate(3, 7), 'f3+=.3')
+	tl.add(rotate(5, 9), 'f3+=.3')
 	tl.from('#t3', .3, {opacity:0}, '+=1')
 	tl.to('#t3', .3, {opacity:0}, '+=1')
 	tl.from('#t4', .3, {opacity:0})

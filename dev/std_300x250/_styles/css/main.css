@@ -171,6 +171,10 @@ sup {
   cursor: pointer;
 }
 
+.frame1 {
+  opacity: 1;
+}
+
 #banner {
   font-size: 20px;
   width: 300px;
@@ -280,9 +284,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(24px, 25px);
-  -ms-transform: translate(24px, 25px);
-  transform: translate(24px, 25px);
+  -webkit-transform: translate(30px, 26px);
+  -ms-transform: translate(30px, 26px);
+  transform: translate(30px, 26px);
   position: absolute;
 }
 

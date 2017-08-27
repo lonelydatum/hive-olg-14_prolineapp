@@ -5,7 +5,7 @@
 
 
 .frame1 {
-	// opacity: 1;
+	opacity: 1;
 }
 
 p{
@@ -67,6 +67,7 @@ p{
 
 #phoneMain{
 	// display: none;
+
 	// @include pos(13, 45);
 	@include pos(13, 31);
 	// @include pos(13, -46);
@@ -74,6 +75,7 @@ p{
 
 	#phone-mask{
 		// display:none;
+		// border: 1px solid red;
 		width: 275px;
 		height: 565px;
 		overflow: hidden;
@@ -90,7 +92,7 @@ p{
 		height: 222px;
 		@include pos(31, 103);
 		#logo{
-			@include pos(24, 25);
+			@include pos(30, 26);
 		}
 		font-size: 20px;
 		.t1{
