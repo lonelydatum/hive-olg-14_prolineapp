@@ -74,6 +74,8 @@ function rotate(from, to) {
 
 start();
 
+console.log('sldkfj');
+
 },{}]},{},[1])
 
 
