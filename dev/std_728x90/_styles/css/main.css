@@ -181,9 +181,9 @@ sup {
 }
 
 #t1 {
-  -webkit-transform: translate(127px, 30px);
-  -ms-transform: translate(127px, 30px);
-  transform: translate(127px, 30px);
+  -webkit-transform: translate(127px, 34px);
+  -ms-transform: translate(127px, 34px);
+  transform: translate(127px, 34px);
   position: absolute;
 }
 
