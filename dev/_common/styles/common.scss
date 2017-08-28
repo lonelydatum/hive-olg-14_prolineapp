@@ -37,7 +37,7 @@ canvas{
 	height: 250px;
 	overflow: hidden;
 	position: relative;
-	background-color: #0042b0;
+	background-color: #00a950;
 	-webkit-text-size-adjust: 100%;
 	opacity: 1;
 	color: white;
@@ -133,4 +133,8 @@ sup{
 	color: white;
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.bg{
+	opacity:0.65;
 }
