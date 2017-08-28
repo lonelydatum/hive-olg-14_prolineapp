@@ -83,7 +83,7 @@ function start() {
 
 	tl.add('bump', '+=.2');
 	tl.from("#t5", .4, { opacity: 0, x: '-=10', ease: Power1.easeInOut }, 'bump');
-	tl.to(_commonJsPROLINEJs.dom.phoneMain, .3, { x: 430 }, 'bump');
+	tl.to(_commonJsPROLINEJs.dom.phoneMain, .3, { x: 420 }, 'bump');
 
 	tl.from(".logos", .4, { opacity: 0 });
 
