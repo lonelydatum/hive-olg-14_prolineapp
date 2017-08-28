@@ -6,7 +6,7 @@ const tl = new TimelineMax()
 import {dom, rotate} from '../../_common/js/PROLINE.js'
 
 
-TweenLite.defaultEase = Sine.easeOut
+
 
 
 
@@ -20,11 +20,14 @@ function start(){
 	
 	
 	tl.add('f2', '+=.6')	
-	tl.from("#t1 span", .5, {clip:`rect(0px,0px,51px,0px)`}, 'f2')
+	
+	tl.to("#t1", .7, {x:127, ease:Sine.easeOut}, 'f2')
 	tl.add(rotate(0, 9), 'f2')
 	tl.to(dom.phoneMain, .4, {y:-40}, 'f2')
-	tl.to(dom.screen, .9, {opacity:1})
-	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
+
+	tl.from("#t1 span", .5, {clip:`rect(0px,0px,51px,0px)`})
+	tl.to(dom.screen, .2, {opacity:1})
+	
 
 	tl.add('f3', '+=1')
 	tl.to('#t1', .3, {opacity:0}, 'f3')

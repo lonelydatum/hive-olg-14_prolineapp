@@ -25,8 +25,9 @@
 }
 
 #t1{
-	// opacity: 1;
-	@include pos(127, 34);
+	opacity: 1;
+	// @include pos(127, 34);
+	@include pos(337, 34);
 	// @include pos(125, 25);
 	span{
 		// opacity: 0;
@@ -79,6 +80,10 @@
 
 #legal-button{
 	@include pos(19, 56);
+}
+
+#legal-copy{
+	width: 670px;
 }
 
 #phoneMain{

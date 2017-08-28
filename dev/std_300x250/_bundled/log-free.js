@@ -7,6 +7,8 @@ Object.defineProperty(exports, '__esModule', {
 
 var width = document.getElementById('phone-mask').offsetWidth;
 
+TweenLite.defaultEase = Power2.easeInOut;
+
 var dom = {
 	phone: document.getElementById('phone'),
 	phoneMain: document.getElementById('phoneMain'),
@@ -34,7 +36,7 @@ function rotate(from, to) {
 	for (var i = from; i <= to; i++) {
 		var x = -i * width;
 		void 0;
-		tlRotate.set(dom.phone, { x: x }, '+=.07');
+		tlRotate.set(dom.phone, { x: x }, '+=.05');
 	}
 
 	return tlRotate;
@@ -50,10 +52,9 @@ exports.rotate = rotate;
 
 var _commonJsPROLINEJs = require('../../_common/js/PROLINE.js');
 
+// TweenLite.defaultEase = Sine.easeOut
+
 var tl = new TimelineMax();
-
-TweenLite.defaultEase = Sine.easeOut;
-
 function start() {
 	tl.set('.frame1', { opacity: 1 });
 

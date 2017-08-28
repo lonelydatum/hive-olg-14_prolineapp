@@ -6,7 +6,7 @@ const tl = new TimelineMax()
 import {dom, rotate} from '../../_common/js/PROLINE.js'
 
 
-TweenLite.defaultEase = Sine.easeOut
+// TweenLite.defaultEase = Sine.easeOut
 
 
 

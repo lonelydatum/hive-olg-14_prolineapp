@@ -1,6 +1,10 @@
 
 const width = document.getElementById('phone-mask').offsetWidth
 
+
+TweenLite.defaultEase = Power2.easeInOut
+
+
 const dom = {
 	phone: document.getElementById('phone'),
 	phoneMain: document.getElementById('phoneMain'),
@@ -31,7 +35,7 @@ function rotate(from, to){
 	for(let i=from;i<=to;i++){
 		const x = -i*width
 		console.log(i)
-		tlRotate.set(dom.phone, {x:x}, '+=.07')
+		tlRotate.set(dom.phone, {x:x}, '+=.05')
 	}
 
 	return tlRotate

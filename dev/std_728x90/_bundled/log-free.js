@@ -7,6 +7,8 @@ Object.defineProperty(exports, '__esModule', {
 
 var width = document.getElementById('phone-mask').offsetWidth;
 
+TweenLite.defaultEase = Power2.easeInOut;
+
 var dom = {
 	phone: document.getElementById('phone'),
 	phoneMain: document.getElementById('phoneMain'),
@@ -34,7 +36,7 @@ function rotate(from, to) {
 	for (var i = from; i <= to; i++) {
 		var x = -i * width;
 		void 0;
-		tlRotate.set(dom.phone, { x: x }, '+=.07');
+		tlRotate.set(dom.phone, { x: x }, '+=.05');
 	}
 
 	return tlRotate;
@@ -52,8 +54,6 @@ var _commonJsPROLINEJs = require('../../_common/js/PROLINE.js');
 
 var tl = new TimelineMax();
 
-TweenLite.defaultEase = Sine.easeOut;
-
 function start() {
 	tl.set('.frame1', { opacity: 1 });
 
@@ -62,11 +62,13 @@ function start() {
 	tl.from(_commonJsPROLINEJs.dom.phoneMain, .5, { y: 60 }, 'f1+=.3');
 
 	tl.add('f2', '+=.6');
-	tl.from("#t1 span", .5, { clip: 'rect(0px,0px,51px,0px)' }, 'f2');
+
+	tl.to("#t1", .7, { x: 127, ease: Sine.easeOut }, 'f2');
 	tl.add((0, _commonJsPROLINEJs.rotate)(0, 9), 'f2');
 	tl.to(_commonJsPROLINEJs.dom.phoneMain, .4, { y: -40 }, 'f2');
-	tl.to(_commonJsPROLINEJs.dom.screen, .9, { opacity: 1 });
-	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
+
+	tl.from("#t1 span", .5, { clip: 'rect(0px,0px,51px,0px)' });
+	tl.to(_commonJsPROLINEJs.dom.screen, .2, { opacity: 1 });
 
 	tl.add('f3', '+=1');
 	tl.to('#t1', .3, { opacity: 0 }, 'f3');

@@ -156,7 +156,7 @@ sup {
   line-height: 13px;
   opacity: 0;
   color: white;
-  width: 670px;
+  width: 100%;
   right: 0px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -181,9 +181,10 @@ sup {
 }
 
 #t1 {
-  -webkit-transform: translate(127px, 34px);
-  -ms-transform: translate(127px, 34px);
-  transform: translate(127px, 34px);
+  opacity: 1;
+  -webkit-transform: translate(337px, 34px);
+  -ms-transform: translate(337px, 34px);
+  transform: translate(337px, 34px);
   position: absolute;
 }
 
@@ -251,6 +252,10 @@ sup {
   -ms-transform: translate(19px, 56px);
   transform: translate(19px, 56px);
   position: absolute;
+}
+
+#legal-copy {
+  width: 670px;
 }
 
 #phoneMain {
