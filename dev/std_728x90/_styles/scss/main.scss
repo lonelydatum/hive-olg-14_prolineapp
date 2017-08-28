@@ -30,7 +30,7 @@
 	// @include pos(125, 25);
 	span{
 		// opacity: 0;
-		@include pos(57, -29);
+		@include pos(59, -29);
 		letter-spacing: -0.5px;
 		clip: rect(0px,150px,51px,0px);
 		// clip: rect(0px,0px,51px,0px);
@@ -48,13 +48,13 @@
 }
 
 #t3{
-	@include pos(127, 46);	
+	@include pos(127, 47);	
 	letter-spacing: -0.5px;
 	// opacity: 1;
 }
 
 #t4{
-	@include pos(127, 49);	
+	@include pos(127, 47);	
 	letter-spacing: -0.5px;
 	// opacity: 1;
 }
