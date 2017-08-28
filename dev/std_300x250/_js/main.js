@@ -16,21 +16,23 @@ function start(){
 
 	tl.add('f1')
 	tl.from(dom.phoneMain, .5, {y:190}, 'f1')
-	tl.from("#t1", .5, {opacity: 0, y:'+=130'}, 'f1')
+	tl.add(rotate(0, 12), 'f1')
+	// tl.from("#t1", .5, {opacity: 0, y:'+=130'}, 'f1')
+	tl.from("#t1", .5, {opacity: 0, y:'+=20', ease:Back.easeInOut}, 'f1+=.2')
 	
-	tl.add('f2', '+=.6')
+	tl.add('f2', '+=0')
 	tl.from("#t1", .5, {x: 125}, 'f2')
 	tl.from("#t1 span", .5, {clip:`rect(0px,0px,51px,0px)`}, 'f2')
-	tl.add(rotate(0, 9), 'f2')
+	
 	tl.to(dom.screen, .9, {opacity:1})
 	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
 
-	tl.add('f3', '+=1')
+	tl.add('f3', '+=1.5')
 	tl.to('#t1', .3, {opacity:0}, 'f3')
 	tl.from('#t2', .3, {opacity:0, y:'+=35'}, 'f3+=.3')
 
 	// tl.add(rotate(5, 9), 'f3+=.3')
-	tl.from('#t3', .3, {opacity:0}, '+=1')
+	tl.from('#t3', .3, {opacity:0}, '+=.1')
 	tl.to('#t3', .3, {opacity:0}, '+=1')
 	tl.from('#t4', .3, {opacity:0})
 

@@ -25,7 +25,7 @@ function start(){
 	tl.to(dom.phoneMain, .4, {y:-34}, 'f2')
 
 	tl.from("#t1 span", .5, {clip:`rect(0px,0px,51px,0px)`})
-	tl.to(dom.screen, .9, {opacity:1})
+	tl.to(dom.screen, .9, {opacity:1}, '+=.5')
 	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
 
 	tl.add('f3', '+=1')

@@ -36,7 +36,7 @@ function rotate(from, to) {
 	for (var i = from; i <= to; i++) {
 		var x = -i * width;
 		void 0;
-		tlRotate.set(dom.phone, { x: x }, '+=.05');
+		tlRotate.set(dom.phone, { x: x }, '+=.06');
 	}
 
 	return tlRotate;
@@ -58,17 +58,16 @@ function start() {
 	tl.set('.frame1', { opacity: 1 });
 
 	tl.add('f1');
-	tl.from("#t1", .5, { opacity: 0, y: '+=20' }, 'f1');
-	tl.from(_commonJsPROLINEJs.dom.phoneMain, .5, { y: 60 }, 'f1+=.3');
+	tl.add((0, _commonJsPROLINEJs.rotate)(0, 12), 'f1');
+	tl.from("#t1", .3, { opacity: 0, y: '+=20' }, 'f1');
+	tl.from(_commonJsPROLINEJs.dom.phoneMain, .4, { y: 60 }, 'f1');
 
-	tl.add('f2', '+=.6');
+	tl.add('f2', '+=0');
 
-	tl.to("#t1", .7, { x: 127, ease: Sine.easeOut }, 'f2');
-	tl.add((0, _commonJsPROLINEJs.rotate)(0, 9), 'f2');
-	tl.to(_commonJsPROLINEJs.dom.phoneMain, .4, { y: -40 }, 'f2');
+	tl.to("#t1", .3, { x: 127, ease: Sine.easeOut }, 'f2');
 
-	tl.from("#t1 span", .5, { clip: 'rect(0px,0px,51px,0px)' });
-	tl.to(_commonJsPROLINEJs.dom.screen, .2, { opacity: 1 });
+	tl.from("#t1 span", .7, { clip: 'rect(0px,0px,51px,0px)' }, 'f2');
+	tl.to(_commonJsPROLINEJs.dom.screen, .2, { opacity: 1 }, '+=.5');
 
 	tl.add('f3', '+=1');
 	tl.to('#t1', .3, { opacity: 0 }, 'f3');

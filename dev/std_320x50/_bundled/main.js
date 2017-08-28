@@ -36,7 +36,7 @@ function rotate(from, to) {
 	for (var i = from; i <= to; i++) {
 		var x = -i * width;
 		console.log(i);
-		tlRotate.set(dom.phone, { x: x }, '+=.05');
+		tlRotate.set(dom.phone, { x: x }, '+=.06');
 	}
 
 	return tlRotate;
@@ -67,7 +67,7 @@ function start() {
 	tl.to(_commonJsPROLINEJs.dom.phoneMain, .4, { y: -34 }, 'f2');
 
 	tl.from("#t1 span", .5, { clip: 'rect(0px,0px,51px,0px)' });
-	tl.to(_commonJsPROLINEJs.dom.screen, .9, { opacity: 1 });
+	tl.to(_commonJsPROLINEJs.dom.screen, .9, { opacity: 1 }, '+=.5');
 	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
 
 	tl.add('f3', '+=1');

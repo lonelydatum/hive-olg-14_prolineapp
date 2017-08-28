@@ -35,7 +35,7 @@ function rotate(from, to){
 	for(let i=from;i<=to;i++){
 		const x = -i*width
 		console.log(i)
-		tlRotate.set(dom.phone, {x:x}, '+=.05')
+		tlRotate.set(dom.phone, {x:x}, '+=.06')
 	}
 
 	return tlRotate
