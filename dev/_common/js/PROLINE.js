@@ -2,7 +2,7 @@
 const width = document.getElementById('phone-mask').offsetWidth
 
 
-TweenLite.defaultEase = Power2.easeInOut
+TweenLite.defaultEase = Power3.easeInOut
 
 
 const dom = {

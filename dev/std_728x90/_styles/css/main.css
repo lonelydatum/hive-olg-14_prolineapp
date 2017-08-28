@@ -182,9 +182,9 @@ sup {
 
 #t1 {
   opacity: 1;
-  -webkit-transform: translate(337px, 34px);
-  -ms-transform: translate(337px, 34px);
-  transform: translate(337px, 34px);
+  -webkit-transform: translate(127px, 34px);
+  -ms-transform: translate(127px, 34px);
+  transform: translate(127px, 34px);
   position: absolute;
 }
 
@@ -199,9 +199,9 @@ sup {
 }
 
 #t2 {
-  -webkit-transform: translate(128px, 34px);
-  -ms-transform: translate(128px, 34px);
-  transform: translate(128px, 34px);
+  -webkit-transform: translate(128px, 19px);
+  -ms-transform: translate(128px, 19px);
+  transform: translate(128px, 19px);
   position: absolute;
   letter-spacing: -0.5px;
 }
@@ -223,9 +223,9 @@ sup {
 }
 
 #t5 {
-  -webkit-transform: translate(124px, 40px);
-  -ms-transform: translate(124px, 40px);
-  transform: translate(124px, 40px);
+  -webkit-transform: translate(128px, 40px);
+  -ms-transform: translate(128px, 40px);
+  transform: translate(128px, 40px);
   position: absolute;
   letter-spacing: -0.4px;
   font-size: 25px;

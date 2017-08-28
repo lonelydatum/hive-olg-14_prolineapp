@@ -28,12 +28,12 @@ function start(){
 	// tl.to(dom.phoneMain, .3, {y:31}, 'f2')
 
 	tl.add('f3', '+=1.5')
-	tl.to('#t1', .3, {opacity:0}, 'f3')
-	tl.from('#t2', .3, {opacity:0, y:'+=35'}, 'f3+=.3')
+	tl.to('#t1', .1, {opacity:0}, 'f3')
+	tl.from('#t2', .3, {opacity:0}, 'f3+=.3')
 
 	// tl.add(rotate(5, 9), 'f3+=.3')
-	tl.from('#t3', .3, {opacity:0}, '+=.1')
-	tl.to('#t3', .3, {opacity:0}, '+=1')
+	tl.from('#t3', .3, {opacity:0}, '+=.5')
+	tl.to('#t3', .1, {opacity:0}, '+=1')
 	tl.from('#t4', .3, {opacity:0})
 
 	tl.add('end', '+=1')

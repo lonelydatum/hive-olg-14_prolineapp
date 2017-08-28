@@ -7,7 +7,7 @@ Object.defineProperty(exports, '__esModule', {
 
 var width = document.getElementById('phone-mask').offsetWidth;
 
-TweenLite.defaultEase = Power2.easeInOut;
+TweenLite.defaultEase = Power3.easeInOut;
 
 var dom = {
 	phone: document.getElementById('phone'),
