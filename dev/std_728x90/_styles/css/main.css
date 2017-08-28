@@ -175,22 +175,22 @@ sup {
 
 #banner {
   font-size: 20px;
-  width: 300px;
-  height: 250px;
+  width: 728px;
+  height: 90px;
   font-size: 29px;
 }
 
 #t1 {
-  -webkit-transform: translate(48px, 25px);
-  -ms-transform: translate(48px, 25px);
-  transform: translate(48px, 25px);
+  -webkit-transform: translate(127px, 30px);
+  -ms-transform: translate(127px, 30px);
+  transform: translate(127px, 30px);
   position: absolute;
 }
 
 #t1 span {
-  -webkit-transform: translate(58px, -29px);
-  -ms-transform: translate(58px, -29px);
-  transform: translate(58px, -29px);
+  -webkit-transform: translate(57px, -29px);
+  -ms-transform: translate(57px, -29px);
+  transform: translate(57px, -29px);
   position: absolute;
   letter-spacing: -0.5px;
   clip: rect(0px, 150px, 51px, 0px);
@@ -198,51 +198,65 @@ sup {
 }
 
 #t2 {
-  -webkit-transform: translate(44px, 28px);
-  -ms-transform: translate(44px, 28px);
-  transform: translate(44px, 28px);
+  -webkit-transform: translate(128px, 34px);
+  -ms-transform: translate(128px, 34px);
+  transform: translate(128px, 34px);
   position: absolute;
   letter-spacing: -0.5px;
-  opacity: 1;
 }
 
 #t3 {
-  -webkit-transform: translate(104px, 57px);
-  -ms-transform: translate(104px, 57px);
-  transform: translate(104px, 57px);
+  -webkit-transform: translate(127px, 46px);
+  -ms-transform: translate(127px, 46px);
+  transform: translate(127px, 46px);
   position: absolute;
   letter-spacing: -0.5px;
-  opacity: 1;
 }
 
 #t4 {
-  -webkit-transform: translate(88px, 57px);
-  -ms-transform: translate(88px, 57px);
-  transform: translate(88px, 57px);
+  -webkit-transform: translate(127px, 49px);
+  -ms-transform: translate(127px, 49px);
+  transform: translate(127px, 49px);
   position: absolute;
   letter-spacing: -0.5px;
+}
+
+#t5 {
+  -webkit-transform: translate(124px, 40px);
+  -ms-transform: translate(124px, 40px);
+  transform: translate(124px, 40px);
+  position: absolute;
+  letter-spacing: -0.4px;
+  font-size: 25px;
 }
 
 #logo-olg {
   width: 28px;
-  -webkit-transform: translate(258px, 217px);
-  -ms-transform: translate(258px, 217px);
-  transform: translate(258px, 217px);
+  -webkit-transform: translate(681px, 60px);
+  -ms-transform: translate(681px, 60px);
+  transform: translate(681px, 60px);
   position: absolute;
 }
 
 #logo-playsmart {
   width: 56px;
-  -webkit-transform: translate(12px, 226px);
-  -ms-transform: translate(12px, 226px);
-  transform: translate(12px, 226px);
+  -webkit-transform: translate(20px, 66px);
+  -ms-transform: translate(20px, 66px);
+  transform: translate(20px, 66px);
+  position: absolute;
+}
+
+#legal-button {
+  -webkit-transform: translate(19px, 56px);
+  -ms-transform: translate(19px, 56px);
+  transform: translate(19px, 56px);
   position: absolute;
 }
 
 #phoneMain {
-  -webkit-transform: translate(13px, 31px);
-  -ms-transform: translate(13px, 31px);
-  transform: translate(13px, 31px);
+  -webkit-transform: translate(379px, -22px) scale(0.72, 0.72);
+  -ms-transform: translate(379px, -22px) scale(0.72, 0.72);
+  transform: translate(379px, -22px) scale(0.72, 0.72);
   position: absolute;
 }
 
@@ -284,9 +298,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(30px, 26px) scale(0.5, 0.5);
-  -ms-transform: translate(30px, 26px) scale(0.5, 0.5);
-  transform: translate(30px, 26px) scale(0.5, 0.5);
+  -webkit-transform: translate(42px, 10px) scale(0.4, 0.4);
+  -ms-transform: translate(42px, 10px) scale(0.4, 0.4);
+  transform: translate(42px, 10px) scale(0.4, 0.4);
   position: absolute;
 }
 

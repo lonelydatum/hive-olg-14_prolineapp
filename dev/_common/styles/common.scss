@@ -105,22 +105,24 @@ sup{
 
 
 #legal-copy {
-	font-size: 10px;
+	font-size: 9px;
 	background-color: rgba(0,0,0,.9);
 	padding: 15px 11px;
 	@include pos(0, 0);
-	line-height: 14px;
+	line-height: 13px;
 	opacity:0;
 	color: white;
+	width: 670px;
+	right: 0px;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
 
 #legal-button{
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	
-	font-size: 10px;
+	font-size: 9px;
 	@include pos(11, 210);
-	color: #f7ec13;
+	color: white;
 	text-decoration: underline;
 	cursor: pointer;
 }
