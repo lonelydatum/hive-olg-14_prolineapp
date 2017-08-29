@@ -77,10 +77,10 @@ function start() {
 
 	// tl.add(rotate(5, 9), 'f3+=.3')
 	tl.from('#t3', .3, { opacity: 0 }, '+=.5');
-	tl.to('#t3', .1, { opacity: 0 }, '+=1');
+	tl.to('#t3', .1, { opacity: 0 }, '+=1.1');
 	tl.from('#t4', .3, { opacity: 0 });
 
-	tl.add('end', '+=1');
+	tl.add('end', '+=1.1');
 	tl.to(['#t2', '#t4'], .3, { opacity: 0, y: '-=40' }, 'end');
 	tl.to(_commonJsPROLINEJs.dom.phoneMain, .4, { y: -46 }, 'end');
 	tl.from(".logos", .4, { opacity: 0 }, 'end');
