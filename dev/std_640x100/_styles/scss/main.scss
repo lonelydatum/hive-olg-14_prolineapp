@@ -76,6 +76,13 @@ $yMid: 38;
 	// opacity: 1;
 }
 
+
+#logo-app{
+	width: 41px;
+	height: 50px;
+	@include pos(486, 33);
+}
+
 #phoneMain{
 	@include pos-scale(323, -39, 0.81);	
 	#phone-mask{
@@ -119,7 +126,7 @@ $yMid: 38;
 
 
 #t5{
-	@include pos($x+24, 25);	
+	@include pos($x - 13, 25);	
 	letter-spacing: -0.4px;
 	// font-size: 25px;
 	// opacity: 1;

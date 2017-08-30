@@ -94,7 +94,7 @@
 	#app-screen{
 		@include pos(31, 101);
 	}
-
+	$yy: 161;
 	#screen{
 		opacity: 0;
 		
@@ -102,7 +102,7 @@
 		height: 362px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(30, 105, .5);
+			@include pos-scale(30, 75, .5);
 		}
 		font-size: 28px;
 		p{
@@ -111,14 +111,18 @@
 			// border: 1px solid red;
 		}
 		.t1{
-			@include pos(0, 193);
-			letter-spacing: -0.2px;			
-			
-			
+			@include pos(0, $yy);
+			letter-spacing: -0.2px;
 		}
 		.t2{
-			@include pos(0, 222);
+			@include pos(0, $yy+29);
 			letter-spacing: -0.2px;
+		}
+
+		#logo-app{
+			width: 41px;
+			height: 50px;
+			@include pos(90, 291);
 		}
 		
 	}

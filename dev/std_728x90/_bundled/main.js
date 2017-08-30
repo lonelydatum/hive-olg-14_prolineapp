@@ -98,8 +98,9 @@ var _commonJsAnimationJs = require('../../_common/js/Animation.js');
 
 function bump() {
 	_commonJsAnimationJs.tl.add('bump', '+=.2');
-	_commonJsAnimationJs.tl.from("#t5", .4, { opacity: 0, x: '-=10', ease: Power1.easeInOut }, 'bump');
-	_commonJsAnimationJs.tl.to(_commonJsPROLINEJs.dom.phoneMain, .3, { x: 420 }, 'bump');
+	_commonJsAnimationJs.tl.from("#t5", .4, { opacity: 0, ease: Power1.easeInOut }, 'bump');
+	_commonJsAnimationJs.tl.to(_commonJsPROLINEJs.dom.phoneMain, .3, { x: 350 - 15, ease: Sine.easeOut }, 'bump');
+	_commonJsAnimationJs.tl.from("#logo-app", .3, { opacity: 0 }, 'bump');
 }
 
 (0, _commonJsAnimationJs.start)();

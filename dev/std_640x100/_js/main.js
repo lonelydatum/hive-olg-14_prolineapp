@@ -7,7 +7,8 @@ import {tl, start, end} from '../../_common/js/Animation.js'
 
 function bump() {
 	tl.add('bump', '+=.2')
-	tl.from("#t5", .4, {opacity:0, ease:Power1.easeInOut}, 'bump')
+	tl.to(dom.phoneMain, .4, {x:271}, 'bump')
+	tl.from(["#t5", '#logo-app'], .4, {opacity:0, ease:Power1.easeInOut}, 'bump+=.2')
 }
 
 start()
