@@ -102,7 +102,7 @@
 		height: 362px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(30, 26, .5);
+			@include pos-scale(30, 105, .5);
 		}
 		font-size: 28px;
 		p{
@@ -111,13 +111,13 @@
 			// border: 1px solid red;
 		}
 		.t1{
-			@include pos(0, 159);
+			@include pos(0, 193);
 			letter-spacing: -0.2px;			
 			
 			
 		}
 		.t2{
-			@include pos(0, 188);
+			@include pos(0, 222);
 			letter-spacing: -0.2px;
 		}
 		

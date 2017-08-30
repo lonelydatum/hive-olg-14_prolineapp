@@ -85,9 +85,8 @@ function start() {
 }
 
 function end() {
-	tl.from(".logos", .4, { opacity: 0 }, 'end');
 
-	tl.from('#screen p', .3, { opacity: 0 }, '+=.6');
+	tl.to([".logos", '#screen p'], .4, { opacity: 1 }, 'end+=.3');
 
 	tl.from(['.end'], .3, { opacity: 0 }, '+=.3');
 }
