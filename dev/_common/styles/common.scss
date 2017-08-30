@@ -150,7 +150,9 @@ sup{
 	background: -webkit-linear-gradient(#FFFFFF, #C0C0C0);
 	background: -ms-linear-gradient(#FFFFFF, #C0C0C0);
 	-webkit-background-clip: text;
+	-ms-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
 }
 
 
