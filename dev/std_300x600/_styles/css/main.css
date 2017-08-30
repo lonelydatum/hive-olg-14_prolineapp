@@ -289,9 +289,9 @@ sup {
 }
 
 #phoneMain #phone-mask #phone {
-  -webkit-transform: translate(-3300px, 0px);
-  -ms-transform: translate(-3300px, 0px);
-  transform: translate(-3300px, 0px);
+  -webkit-transform: translate(-2475px, 0px);
+  -ms-transform: translate(-2475px, 0px);
+  transform: translate(-2475px, 0px);
   position: absolute;
 }
 

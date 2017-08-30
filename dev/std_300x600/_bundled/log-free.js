@@ -60,10 +60,10 @@ function start() {
 	tl.set('.frame1', { opacity: 1 });
 
 	tl.add('f1');
-	tl.from(_commonJsPROLINEJs.dom.phoneMain, _commonJsPROLINEJs.dom.phoneMain.timeUp || .5, { y: banner.offsetHeight }, 'f1');
-	tl.add((0, _commonJsPROLINEJs.rotate)(0, 12), 'f1');
-	tl.from("#t1", _commonJsPROLINEJs.dom.phoneMain.timeUp || .5, { opacity: 0, y: '+=20', ease: Back.easeInOut }, 'f1+=.6');
-	tl.from('#app-screen', .4, { opacity: 0 }, 'f1+=.6');
+	tl.from(_commonJsPROLINEJs.dom.phoneMain, .9, { y: banner.offsetHeight }, 'f1');
+	tl.add((0, _commonJsPROLINEJs.rotate)(0, 9), 'f1+=.3');
+	tl.from("#t1", _commonJsPROLINEJs.dom.phoneMain.timeUp || .5, { opacity: 0, y: '+=20', ease: Back.easeInOut }, 'f1+=.8');
+	tl.from('#app-screen', .4, { opacity: 0 }, 'f1+=.9');
 
 	tl.add('f2', '+=0');
 	tl.from("#t1", .5, { x: 125 }, 'f2');
