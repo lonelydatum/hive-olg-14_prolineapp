@@ -78,6 +78,7 @@
 
 #phoneMain{
 	@include pos(11, 153);
+	// @include pos(11, 73);
 	#phone-mask{
 		// display:none;
 		// border: 1px solid red;
@@ -88,6 +89,10 @@
 		#phone{
 			@include pos(-275*12, 0);
 		}
+	}
+
+	#app-screen{
+		@include pos(31, 101);
 	}
 
 	#screen{

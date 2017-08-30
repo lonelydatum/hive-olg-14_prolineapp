@@ -295,6 +295,13 @@ sup {
   position: absolute;
 }
 
+#phoneMain #app-screen {
+  -webkit-transform: translate(31px, 101px);
+  -ms-transform: translate(31px, 101px);
+  transform: translate(31px, 101px);
+  position: absolute;
+}
+
 #phoneMain #screen {
   opacity: 0;
   width: 213px;
