@@ -78,7 +78,7 @@
 }
 
 #phoneMain{
-	@include pos-scale(385, -40, 0.72);
+	@include pos-scale(392, -40, 0.72);
 	#phone-mask{
 		// display:none;
 		// border: 1px solid red;
@@ -118,7 +118,7 @@
 		}
 	}
 }
-$xx:158;
+$xx:156;
 #t5{
 	@include pos($xx, 20);	
 	letter-spacing: -0.4px;

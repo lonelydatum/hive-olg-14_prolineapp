@@ -275,9 +275,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(385px, -40px) scale(0.72, 0.72);
-  -ms-transform: translate(385px, -40px) scale(0.72, 0.72);
-  transform: translate(385px, -40px) scale(0.72, 0.72);
+  -webkit-transform: translate(392px, -40px) scale(0.72, 0.72);
+  -ms-transform: translate(392px, -40px) scale(0.72, 0.72);
+  transform: translate(392px, -40px) scale(0.72, 0.72);
   position: absolute;
 }
 
@@ -338,9 +338,9 @@ sup {
 }
 
 #t5 {
-  -webkit-transform: translate(158px, 20px);
-  -ms-transform: translate(158px, 20px);
-  transform: translate(158px, 20px);
+  -webkit-transform: translate(156px, 20px);
+  -ms-transform: translate(156px, 20px);
+  transform: translate(156px, 20px);
   position: absolute;
   letter-spacing: -0.4px;
 }
@@ -348,9 +348,9 @@ sup {
 #logo-app {
   width: 43px;
   height: 53px;
-  -webkit-transform: translate(340px, 23px);
-  -ms-transform: translate(340px, 23px);
-  transform: translate(340px, 23px);
+  -webkit-transform: translate(338px, 23px);
+  -ms-transform: translate(338px, 23px);
+  transform: translate(338px, 23px);
   position: absolute;
 }
 
