@@ -78,9 +78,9 @@ $yMid: 38;
 
 
 #logo-app{
-	width: 41px;
-	height: 50px;
-	@include pos(486, 33);
+	width: 42px;
+	height: 52px;
+	@include pos(285, 29);
 }
 
 #phoneMain{
@@ -126,7 +126,7 @@ $yMid: 38;
 
 
 #t5{
-	@include pos($x - 13, 25);	
+	@include pos($x - 21, 25);	
 	letter-spacing: -0.4px;
 	// font-size: 25px;
 	// opacity: 1;

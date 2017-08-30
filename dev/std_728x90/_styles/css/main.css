@@ -247,14 +247,6 @@ sup {
   letter-spacing: -0.5px;
 }
 
-#t5 {
-  -webkit-transform: translate(157px, 20px);
-  -ms-transform: translate(157px, 20px);
-  transform: translate(157px, 20px);
-  position: absolute;
-  letter-spacing: -0.4px;
-}
-
 #logo-olg {
   width: 28px;
   -webkit-transform: translate(681px, 60px);
@@ -283,9 +275,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(379px, -40px) scale(0.72, 0.72);
-  -ms-transform: translate(379px, -40px) scale(0.72, 0.72);
-  transform: translate(379px, -40px) scale(0.72, 0.72);
+  -webkit-transform: translate(385px, -40px) scale(0.72, 0.72);
+  -ms-transform: translate(385px, -40px) scale(0.72, 0.72);
+  transform: translate(385px, -40px) scale(0.72, 0.72);
   position: absolute;
 }
 
@@ -315,7 +307,6 @@ sup {
   transform: translate(31px, 103px);
   position: absolute;
   font-size: 20px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a950+0,001c11+100 */
 }
 
 #phoneMain #screen #logo {
@@ -346,12 +337,20 @@ sup {
   letter-spacing: -0.2px;
 }
 
+#t5 {
+  -webkit-transform: translate(158px, 20px);
+  -ms-transform: translate(158px, 20px);
+  transform: translate(158px, 20px);
+  position: absolute;
+  letter-spacing: -0.4px;
+}
+
 #logo-app {
-  width: 41px;
-  height: 50px;
-  -webkit-transform: translate(535px, 30px);
-  -ms-transform: translate(535px, 30px);
-  transform: translate(535px, 30px);
+  width: 43px;
+  height: 53px;
+  -webkit-transform: translate(340px, 23px);
+  -ms-transform: translate(340px, 23px);
+  transform: translate(340px, 23px);
   position: absolute;
 }
 

@@ -94,7 +94,7 @@
 	#app-screen{
 		@include pos(31, 101);
 	}
-	$yy: 161;
+	$yy: 162;
 	#screen{
 		opacity: 0;
 		
@@ -102,7 +102,7 @@
 		height: 362px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(30, 75, .5);
+			@include pos-scale(30, 68, .5);
 		}
 		font-size: 28px;
 		p{
@@ -120,9 +120,9 @@
 		}
 
 		#logo-app{
-			width: 41px;
-			height: 50px;
-			@include pos(90, 291);
+			width: 49px;
+			height: 61px;
+			@include pos(85, 229);
 		}
 		
 	}
