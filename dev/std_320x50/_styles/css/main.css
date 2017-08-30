@@ -189,9 +189,9 @@ sup {
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #00a950 0%, #001c11 100%);
+  background: linear-gradient(to bottom, #00a950 0%, rgba(0, 28, 17, 0.7) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='#001c11',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='rgba(0, 28, 17, 0.7)',GradientType=0 );
   /* IE6-9 */
 }
 
