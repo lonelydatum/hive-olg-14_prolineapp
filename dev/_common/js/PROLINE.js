@@ -9,7 +9,7 @@ const dom = {
 	phone: document.getElementById('phone'),
 	phoneMain: document.getElementById('phoneMain'),
 	screen: document.getElementById('screen'),
-	
+	banner: document.getElementById('banner')
 }
 
 

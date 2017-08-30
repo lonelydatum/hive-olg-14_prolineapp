@@ -1,74 +1,43 @@
-import {cans} from './NFL.js'
 
-const dom = {
-	banner: document.getElementById('banner'),
-	title: document.getElementById('title'),
-	sprite: document.getElementById('sprite'),
-}
-
-const canWidth = dom.sprite.offsetWidth / 15
 const tl = new TimelineMax()
-tl.set('.frame1', {opacity:1})
+import {dom, rotate} from './PROLINE.js'
 
-const canFirst = cans[0]
-cans.shift()
 
-function renderWords(copy) {
+
+
+
+
+function start(){
+	tl.set('.frame1', {opacity: 1})
+
+	tl.add('f1')
+	tl.add(rotate(0, 12), 'f1')
+	tl.from("#t1", .3, {opacity: 0, y:'+=20'}, 'f1')
+	tl.from(dom.phoneMain, .4, {y:60}, 'f1')
+	tl.from("#t1 span", .5, {clip:`rect(0px,0px,51px,0px)`}, 'f1+=.2')
+	tl.to(dom.screen, .2, {opacity:1})
+
+	tl.add('f3', '+=1')
+	tl.to('#t1', .1, {opacity:0}, 'f3')
+	tl.from('#t2', .3, {opacity:0}, 'f3+=.3')
+
+	tl.from('#t3', .3, {opacity:0}, '+=.1')
+	tl.to('#t3', .1, {opacity:0}, '+=1')
+	tl.from('#t4', .3, {opacity:0})
+
+	tl.add('end', '+=1')
+	tl.to(['#t2', '#t4'], .1, {opacity:0}, 'end')	
 	
-	for(let key in copy){
-		const id = key
-		const text = copy[id]
-		const dom = document.getElementById(id)
-		dom.innerHTML = text
-	}
+	
 }
 
 
-function first(frameName, delay) {
-	// const tlFirst = new TimelineMax()
-	tl.add(frameName, delay)
-	tl.set(dom.banner, {backgroundColor:`#${canFirst.bg}`}, frameName)
-	tl.set(dom.title, {color:`#${canFirst.color}`}, frameName)
-	tl.set(dom.sprite, {x:0}, frameName)
 
-	
-}
-
-function setItem(item, frameName) {
-	// console.log(item)
-	const x = -(item.id)*canWidth
-	
-	tl.set(dom.banner, {backgroundColor:`#${item.bg}`}, frameName)
-	tl.set(dom.title, {color:`#${item.color}`}, frameName)
-	tl.set(dom.sprite, {x:x}, frameName)		
+function end() {
+	tl.from(".logos", .4, {opacity:0} )
+	tl.from(['.end'], .3, {opacity: 0}, '+=.3')
 }
 
 
-// setItem(cans[xxx], xxx)
+export {tl, start, end}
 
-function play() {
-	
-	first('starter', 0)
-	const delaySpeed = .4
-	cans.forEach((item, index)=>{
-		const frameName = `frame-${index}`		
-		const delay = index===0 ? `+=${1}` : `+=${delaySpeed}`
-		tl.add(frameName, delay)
-		setItem(item, frameName)
-
-		// tl.set(dom.banner, {backgroundColor:`#${item.bg}`}, frameName)
-		// tl.set(dom.title, {color:`#${item.color}`}, frameName)
-		// tl.set(dom.sprite, {x:-(index+1)*canWidth}, frameName)		
-	})
-
-
-	first('ender', `+=${delaySpeed*1.5}`)
-
-	tl.from('#legal', .1, {opacity:0}, '-=.1')
-
-
-}
-
-export {renderWords, play}
-
-// loop()

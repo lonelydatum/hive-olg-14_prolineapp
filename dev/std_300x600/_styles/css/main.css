@@ -183,34 +183,45 @@ sup {
   -webkit-text-fill-color: transparent;
 }
 
+#phoneMain #screen {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a950+0,001c11+100 */
+  background: #00a950;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00a950 0%, #001c11 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='#001c11',GradientType=0 );
+  /* IE6-9 */
+}
+
 #banner {
-  font-size: 20px;
   width: 300px;
   height: 600px;
-  font-size: 29px;
+  font-size: 32px;
 }
 
 #t1 {
-  -webkit-transform: translate(47px, 215px);
-  -ms-transform: translate(47px, 215px);
-  transform: translate(47px, 215px);
+  -webkit-transform: translate(36px, 151px);
+  -ms-transform: translate(36px, 151px);
+  transform: translate(36px, 151px);
   position: absolute;
 }
 
 #t1 span {
-  -webkit-transform: translate(58px, -29px);
-  -ms-transform: translate(58px, -29px);
-  transform: translate(58px, -29px);
+  -webkit-transform: translate(64px, -32px);
+  -ms-transform: translate(64px, -32px);
+  transform: translate(64px, -32px);
   position: absolute;
   letter-spacing: -0.5px;
-  clip: rect(0px, 150px, 51px, 0px);
-  width: 160px;
+  clip: rect(0px, 163px, 51px, 0px);
+  width: 170px;
 }
 
 #t2 {
-  -webkit-transform: translate(0px, 183px);
-  -ms-transform: translate(0px, 183px);
-  transform: translate(0px, 183px);
+  -webkit-transform: translate(0px, 119px);
+  -ms-transform: translate(0px, 119px);
+  transform: translate(0px, 119px);
   position: absolute;
   letter-spacing: -0.5px;
   width: 100%;
@@ -218,9 +229,9 @@ sup {
 }
 
 #t3 {
-  -webkit-transform: translate(0px, 215px);
-  -ms-transform: translate(0px, 215px);
-  transform: translate(0px, 215px);
+  -webkit-transform: translate(0px, 151px);
+  -ms-transform: translate(0px, 151px);
+  transform: translate(0px, 151px);
   position: absolute;
   letter-spacing: -0.5px;
   width: 100%;
@@ -228,9 +239,9 @@ sup {
 }
 
 #t4 {
-  -webkit-transform: translate(0px, 215px);
-  -ms-transform: translate(0px, 215px);
-  transform: translate(0px, 215px);
+  -webkit-transform: translate(0px, 151px);
+  -ms-transform: translate(0px, 151px);
+  transform: translate(0px, 151px);
   position: absolute;
   letter-spacing: -0.5px;
   width: 100%;
@@ -261,9 +272,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(13px, 221px);
-  -ms-transform: translate(13px, 221px);
-  transform: translate(13px, 221px);
+  -webkit-transform: translate(11px, 153px);
+  -ms-transform: translate(11px, 153px);
+  transform: translate(11px, 153px);
   position: absolute;
 }
 
@@ -278,9 +289,9 @@ sup {
 }
 
 #phoneMain #phone-mask #phone {
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
+  -webkit-transform: translate(-3300px, 0px);
+  -ms-transform: translate(-3300px, 0px);
+  transform: translate(-3300px, 0px);
   position: absolute;
 }
 
@@ -292,16 +303,7 @@ sup {
   -ms-transform: translate(31px, 103px);
   transform: translate(31px, 103px);
   position: absolute;
-  font-size: 20px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a950+0,001c11+100 */
-  background: #00a950;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #00a950 0%, #001c11 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='#001c11',GradientType=0 );
-  /* IE6-9 */
+  font-size: 28px;
 }
 
 #phoneMain #screen #logo {
@@ -317,17 +319,17 @@ sup {
 }
 
 #phoneMain #screen .t1 {
-  -webkit-transform: translate(0px, 99px);
-  -ms-transform: translate(0px, 99px);
-  transform: translate(0px, 99px);
+  -webkit-transform: translate(0px, 159px);
+  -ms-transform: translate(0px, 159px);
+  transform: translate(0px, 159px);
   position: absolute;
   letter-spacing: -0.2px;
 }
 
 #phoneMain #screen .t2 {
-  -webkit-transform: translate(0px, 122px);
-  -ms-transform: translate(0px, 122px);
-  transform: translate(0px, 122px);
+  -webkit-transform: translate(0px, 188px);
+  -ms-transform: translate(0px, 188px);
+  transform: translate(0px, 188px);
   position: absolute;
   letter-spacing: -0.2px;
 }

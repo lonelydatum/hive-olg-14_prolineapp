@@ -146,3 +146,16 @@ sup{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+
+#phoneMain{
+	#screen{
+		// background-color: #00a950;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a950+0,001c11+100 */
+		background: #00a950; /* Old browsers */
+		background: -moz-linear-gradient(top, #00a950 0%, #001c11 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #00a950 0%,#001c11 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #00a950 0%,#001c11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='#001c11',GradientType=0 ); /* IE6-9 */
+	}
+}
