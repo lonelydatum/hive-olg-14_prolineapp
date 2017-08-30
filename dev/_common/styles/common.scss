@@ -146,13 +146,9 @@ sup{
 
 
 #t1, #t2, #t3, #t4, #t5, .t1, .t2, #t1 span{	
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#C0C0C0',GradientType=0 );
 	background: -webkit-linear-gradient(#FFFFFF, #C0C0C0);
-	background: -ms-linear-gradient(#FFFFFF, #C0C0C0);
 	-webkit-background-clip: text;
-	-ms-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-ms-text-fill-color: transparent;
 }
 
 
