@@ -33,7 +33,7 @@ $yMid: 26;
 	@include pos($x, $yMid);
 	span{
 		// opacity: 0;
-		@include pos(34, -18);
+		@include pos(34, -17);
 		letter-spacing: -0.5px;
 		clip: rect(0px,150px,51px,0px);
 		// clip: rect(0px,0px,51px,0px);

@@ -213,9 +213,9 @@ sup {
 }
 
 #t1 span {
-  -webkit-transform: translate(34px, -18px);
-  -ms-transform: translate(34px, -18px);
-  transform: translate(34px, -18px);
+  -webkit-transform: translate(34px, -17px);
+  -ms-transform: translate(34px, -17px);
+  transform: translate(34px, -17px);
   position: absolute;
   letter-spacing: -0.5px;
   clip: rect(0px, 150px, 51px, 0px);
