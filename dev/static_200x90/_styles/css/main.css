@@ -342,9 +342,9 @@ sup {
 }
 
 #t5 {
-  -webkit-transform: translate(15px, 11px);
-  -ms-transform: translate(15px, 11px);
-  transform: translate(15px, 11px);
+  -webkit-transform: translate(12px, 11px);
+  -ms-transform: translate(12px, 11px);
+  transform: translate(12px, 11px);
   position: absolute;
   letter-spacing: -0.4px;
 }
