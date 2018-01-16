@@ -1,0 +1,161 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+// p{
+// 	opacity: 0;
+// }
+
+#t1, #t2, #t3, #t4, #t5 {
+	// opacity: 0;
+}
+
+$x: 35;
+$yMid: 20;
+
+#banner{
+	
+	width: 320px;
+	height: 33px;	
+	font-size: 13px;
+	// color: red;
+}
+
+#t1{
+	// opacity: 1;
+	// @include pos($x, $yMid);
+	@include pos($x, $yMid);
+	span{
+		// opacity: 0;
+		@include pos(34, -18);
+		letter-spacing: -0.5px;
+		clip: rect(0px,150px,51px,0px);
+		// clip: rect(0px,0px,51px,0px);
+		width: 160px;
+		// position: relative;
+		// border: 1px solid red
+	}
+}
+
+#t2{
+	@include pos($x, $yMid - 11);	
+	letter-spacing: -0.5px;
+	// opacity: 1;
+}
+
+#t3{
+	@include pos($x, 27);	
+	letter-spacing: -0.5px;
+	// opacity: 1;
+}
+
+#t4{
+	@include pos($x, 27);	
+	letter-spacing: -0.5px;
+	// opacity: 1;
+}
+
+
+
+#logo-olg{
+	width: 19px;
+	@include pos(295, 13);
+}
+
+#logo-playsmart{
+	width: 38px;
+	@include pos(5, 16);
+}
+
+#legal-button{
+	display: none;
+
+}
+
+#legal-copy{
+	width: 586px;
+	// opacity: 1;
+}
+
+#phoneMain{
+	@include pos-scale(212, -13, .26);	
+	#phone-mask{
+		width: 275px;
+		height: 565px;
+		overflow: hidden;
+		@include pos-scale(0,0, 0.85);
+		#phone{
+			@include pos(-275*12, 0);
+		}
+	}
+
+	#screen{
+		// opacity: 0;
+		
+		width: 213px;
+		height: 222px;
+		@include pos(31, 103);
+		#logo{
+			@include pos-scale(42, 10, .4);
+		}
+		font-size: 20px;
+		p{
+			width: 100%;
+			text-align: center;
+			// border: 1px solid red;
+		}
+		.t1{
+			@include pos(0, 99);
+			letter-spacing: -0.2px;			
+			
+			
+		}
+		.t2{
+			@include pos(0, 122);
+			letter-spacing: -0.2px;
+		}
+		// // background-color: #00a950;
+		// /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a950+0,001c11+100 */
+		// background: #00a950; /* Old browsers */
+		// background: -moz-linear-gradient(top, #00a950 0%, #001c11 100%); /* FF3.6-15 */
+		// background: -webkit-linear-gradient(top, #00a950 0%,#001c11 100%); /* Chrome10-25,Safari5.1-6 */
+		// background: linear-gradient(to bottom, #00a950 0%,#001c11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a950', endColorstr='#001c11',GradientType=0 ); /* IE6-9 */
+	}
+}
+
+
+#t5{
+	@include pos(58, 13);	
+	letter-spacing: -0.4px;
+	// font-size: 25px;
+	// opacity: 1;
+	p{
+		display: block;
+	}
+}
+
+// #phoneMain{
+// 	@include pos-scale(164, -34, 0.48);	
+
+	
+// 	#phone-mask{				
+// 		#phone{
+// 			@include pos(-275*9, 0);
+// 		}
+// 	}
+// 	#screen{
+// 		opacity: 1;
+// 		#logo{
+// 			@include pos-scale(42, 10, .4);
+
+// 		}
+// 	}
+// }
+
