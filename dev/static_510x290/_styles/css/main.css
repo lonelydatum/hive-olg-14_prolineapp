@@ -214,42 +214,24 @@ sup {
 #banner {
   width: 510px;
   height: 290px;
-  font-size: 40px;
+}
+
+#logo-app {
+  width: 34px;
+  -webkit-transform: translate(89px, 137px);
+  -ms-transform: translate(89px, 137px);
+  transform: translate(89px, 137px);
+  position: absolute;
 }
 
 #t1 {
-  -webkit-transform: translate(0px, 29px);
-  -ms-transform: translate(0px, 29px);
-  transform: translate(0px, 29px);
+  -webkit-transform: translate(3px, 167px);
+  -ms-transform: translate(3px, 167px);
+  transform: translate(3px, 167px);
   position: absolute;
   text-align: center;
   width: 100%;
-}
-
-#t2 {
-  -webkit-transform: translate(44px, 28px);
-  -ms-transform: translate(44px, 28px);
-  transform: translate(44px, 28px);
-  position: absolute;
-  letter-spacing: -0.5px;
-  opacity: 1;
-}
-
-#t3 {
-  -webkit-transform: translate(104px, 57px);
-  -ms-transform: translate(104px, 57px);
-  transform: translate(104px, 57px);
-  position: absolute;
-  letter-spacing: -0.5px;
-  opacity: 1;
-}
-
-#t4 {
-  -webkit-transform: translate(88px, 57px);
-  -ms-transform: translate(88px, 57px);
-  transform: translate(88px, 57px);
-  position: absolute;
-  letter-spacing: -0.5px;
+  font-size: 25px;
 }
 
 #logo-olg {
@@ -269,9 +251,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(117px, 71px);
-  -ms-transform: translate(117px, 71px);
-  transform: translate(117px, 71px);
+  -webkit-transform: translate(91px, -59px) scale(1.2, 1.2);
+  -ms-transform: translate(91px, -59px) scale(1.2, 1.2);
+  transform: translate(91px, -59px) scale(1.2, 1.2);
   position: absolute;
 }
 
@@ -304,9 +286,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(30px, 26px) scale(0.5, 0.5);
-  -ms-transform: translate(30px, 26px) scale(0.5, 0.5);
-  transform: translate(30px, 26px) scale(0.5, 0.5);
+  -webkit-transform: translate(37px, 13px) scale(0.45, 0.45);
+  -ms-transform: translate(37px, 13px) scale(0.45, 0.45);
+  transform: translate(37px, 13px) scale(0.45, 0.45);
   position: absolute;
 }
 

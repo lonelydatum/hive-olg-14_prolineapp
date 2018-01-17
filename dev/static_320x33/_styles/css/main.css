@@ -282,10 +282,22 @@ sup {
   width: 586px;
 }
 
+#t5 {
+  -webkit-transform: translate(54px, 13px);
+  -ms-transform: translate(54px, 13px);
+  transform: translate(54px, 13px);
+  position: absolute;
+  letter-spacing: -0.4px;
+}
+
+#t5 p {
+  display: block;
+}
+
 #phoneMain {
-  -webkit-transform: translate(212px, -13px) scale(0.26, 0.26);
-  -ms-transform: translate(212px, -13px) scale(0.26, 0.26);
-  transform: translate(212px, -13px) scale(0.26, 0.26);
+  -webkit-transform: translate(202px, -21px) scale(0.31, 0.31);
+  -ms-transform: translate(202px, -21px) scale(0.31, 0.31);
+  transform: translate(202px, -21px) scale(0.31, 0.31);
   position: absolute;
 }
 
@@ -342,18 +354,6 @@ sup {
   transform: translate(0px, 122px);
   position: absolute;
   letter-spacing: -0.2px;
-}
-
-#t5 {
-  -webkit-transform: translate(58px, 13px);
-  -ms-transform: translate(58px, 13px);
-  transform: translate(58px, 13px);
-  position: absolute;
-  letter-spacing: -0.4px;
-}
-
-#t5 p {
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

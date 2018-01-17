@@ -20,7 +20,7 @@
 	font-size: 20px;
 	width: 320px;
 	height: 180px;	
-	font-size: 25px;
+	font-size: 22px;
 }
 
 #legal-button{
@@ -30,17 +30,9 @@
 
 #t1{
 	// opacity: 1;
-	@include pos(88, 11);
+	@include pos(94, 124);
 	// @include pos(125, 25);
-	span{
-		@include pos(58, -29);
-		letter-spacing: -0.5px;
-		clip: rect(0px,150px,51px,0px);
-		// clip: rect(0px,0px,51px,0px);
-		width: 160px;
-		// position: relative;
-		// border: 1px solid red
-	}
+	text-align: center;
 }
 
 #t2{
@@ -67,7 +59,7 @@
 }
 
 #logo-playsmart{
-	width: 56px;
+	width: 53px;
 	@include pos(12, 154);
 }
 
@@ -75,7 +67,7 @@
 	// display: none;
 
 	// @include pos(13, 45);
-	@include pos-scale(53, -6, 0.8);
+	@include pos-scale(51, -62, 0.8);
 	// @include pos(13, -46);
 	// @include pos(13, 190);
 
@@ -96,9 +88,9 @@
 		
 		width: 213px;
 		height: 222px;
-		@include pos(31, 103);
+		@include pos(31, 102);
 		#logo{
-			@include pos-scale(30, 26, .5);
+			@include pos-scale(29, 17, .5);
 		}
 		font-size: 20px;
 		p{

@@ -19,34 +19,25 @@
 #banner{	
 	width: 510px;
 	height: 290px;
-	font-size: 40px;
+	
+}
+
+
+#logo-app{
+	width: 34px;
+	// height: 53px;
+	@include pos(89, 137);
 }
 
 #t1{
 	// opacity: 1;
-	@include pos(0, 29);
+	@include pos(3, 167);
 	// @include pos(125, 25);
 	text-align: center;
 	width: 100%;	
+	font-size: 25px;
 }
 
-#t2{
-	@include pos(44, 28);	
-	letter-spacing: -0.5px;
-	opacity: 1;
-}
-
-#t3{
-	@include pos(104, 57);	
-	letter-spacing: -0.5px;
-	opacity: 1;
-}
-
-#t4{
-	@include pos(88, 57);	
-	letter-spacing: -0.5px;
-	// opacity: 1;
-}
 
 #logo-olg{
 	width: 28px;
@@ -62,7 +53,7 @@
 	// display: none;
 
 	// @include pos(13, 45);
-	@include pos(117, 71);
+	@include pos-scale(91, -59, 1.2);
 	// @include pos(13, -46);
 	// @include pos(13, 190);
 
@@ -85,7 +76,7 @@
 		height: 222px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(30, 26, .5);
+			@include pos-scale(37, 13, .45);
 		}
 		font-size: 20px;
 		p{

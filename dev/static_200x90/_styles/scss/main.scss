@@ -62,14 +62,23 @@ $yMid: 26;
 }
 
 
+#t5{
+	@include pos(12, 9);	
+	letter-spacing: -0.4px;
+	// font-size: 25px;
+	// opacity: 1;
+	p{
+		display: block;
+	}
+}
 
 #logo-olg{
-	width: 19px;
-	@include pos(173, 67);
+	width: 17px;
+	@include pos(177, 69);
 }
 
 #logo-playsmart{
-	width: 38px;
+	width: 36px;
 	@include pos(5, 72);
 }
 
@@ -83,7 +92,7 @@ $yMid: 26;
 }
 
 #phoneMain{
-	@include pos-scale(47, 10, 0.42);	
+	@include pos-scale(34, 0, 0.51);	
 	#phone-mask{
 		width: 275px;
 		height: 565px;
@@ -130,15 +139,6 @@ $yMid: 26;
 }
 
 
-#t5{
-	@include pos(12, 11);	
-	letter-spacing: -0.4px;
-	// font-size: 25px;
-	// opacity: 1;
-	p{
-		display: block;
-	}
-}
 
 // #phoneMain{
 // 	@include pos-scale(164, -34, 0.48);	

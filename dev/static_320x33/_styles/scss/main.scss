@@ -83,8 +83,19 @@ $yMid: 20;
 	// opacity: 1;
 }
 
+
+#t5{
+	@include pos(54, 13);	
+	letter-spacing: -0.4px;
+	// font-size: 25px;
+	// opacity: 1;
+	p{
+		display: block;
+	}
+}
+
 #phoneMain{
-	@include pos-scale(212, -13, .26);	
+	@include pos-scale(202, -21, .31);	
 	#phone-mask{
 		width: 275px;
 		height: 565px;
@@ -131,15 +142,6 @@ $yMid: 20;
 }
 
 
-#t5{
-	@include pos(58, 13);	
-	letter-spacing: -0.4px;
-	// font-size: 25px;
-	// opacity: 1;
-	p{
-		display: block;
-	}
-}
 
 // #phoneMain{
 // 	@include pos-scale(164, -34, 0.48);	
