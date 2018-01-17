@@ -27,49 +27,10 @@ $yMid: 26;
 	// color: red;
 }
 
-#t1{
-	// opacity: 1;
-	// @include pos($x, $yMid);
-	@include pos($x, $yMid);
-	span{
-		// opacity: 0;
-		@include pos(34, -17);
-		letter-spacing: -0.5px;
-		clip: rect(0px,150px,51px,0px);
-		// clip: rect(0px,0px,51px,0px);
-		width: 160px;
-		// position: relative;
-		// border: 1px solid red
-	}
-}
-
-#t2{
-	@include pos($x, $yMid - 11);	
-	letter-spacing: -0.5px;
-	// opacity: 1;
-}
-
-#t3{
-	@include pos($x, 32);	
-	letter-spacing: -0.5px;
-	// opacity: 1;
-}
-
-#t4{
-	@include pos($x, 32);	
-	letter-spacing: -0.5px;
-	// opacity: 1;
-}
-
-
 #t5{
 	@include pos(12, 9);	
 	letter-spacing: -0.4px;
-	// font-size: 25px;
-	// opacity: 1;
-	p{
-		display: block;
-	}
+	
 }
 
 #logo-olg{

@@ -217,57 +217,12 @@ sup {
   font-size: 15px;
 }
 
-#t1 {
-  -webkit-transform: translate(35px, 26px);
-  -ms-transform: translate(35px, 26px);
-  transform: translate(35px, 26px);
-  position: absolute;
-}
-
-#t1 span {
-  -webkit-transform: translate(34px, -17px);
-  -ms-transform: translate(34px, -17px);
-  transform: translate(34px, -17px);
-  position: absolute;
-  letter-spacing: -0.5px;
-  clip: rect(0px, 150px, 51px, 0px);
-  width: 160px;
-}
-
-#t2 {
-  -webkit-transform: translate(35px, 15px);
-  -ms-transform: translate(35px, 15px);
-  transform: translate(35px, 15px);
-  position: absolute;
-  letter-spacing: -0.5px;
-}
-
-#t3 {
-  -webkit-transform: translate(35px, 32px);
-  -ms-transform: translate(35px, 32px);
-  transform: translate(35px, 32px);
-  position: absolute;
-  letter-spacing: -0.5px;
-}
-
-#t4 {
-  -webkit-transform: translate(35px, 32px);
-  -ms-transform: translate(35px, 32px);
-  transform: translate(35px, 32px);
-  position: absolute;
-  letter-spacing: -0.5px;
-}
-
 #t5 {
   -webkit-transform: translate(12px, 9px);
   -ms-transform: translate(12px, 9px);
   transform: translate(12px, 9px);
   position: absolute;
   letter-spacing: -0.4px;
-}
-
-#t5 p {
-  display: block;
 }
 
 #logo-olg {

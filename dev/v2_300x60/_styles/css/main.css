@@ -254,6 +254,14 @@ sup {
   letter-spacing: -0.5px;
 }
 
+#t5 {
+  -webkit-transform: translate(55px, 15px);
+  -ms-transform: translate(55px, 15px);
+  transform: translate(55px, 15px);
+  position: absolute;
+  letter-spacing: -0.4px;
+}
+
 #logo-olg {
   width: 19px;
   -webkit-transform: translate(275px, 39px);
@@ -348,18 +356,6 @@ sup {
   transform: translate(0px, 122px);
   position: absolute;
   letter-spacing: -0.2px;
-}
-
-#t5 {
-  -webkit-transform: translate(55px, 15px);
-  -ms-transform: translate(55px, 15px);
-  transform: translate(55px, 15px);
-  position: absolute;
-  letter-spacing: -0.4px;
-}
-
-#t5 p {
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

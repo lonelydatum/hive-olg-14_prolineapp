@@ -63,6 +63,12 @@ $yMid: 26;
 
 
 
+#t5{
+	@include pos($x+20, 15);	
+	letter-spacing: -0.4px;	
+}
+
+
 #logo-olg{
 	width: 19px;
 	@include pos(275, 39);
@@ -136,16 +142,6 @@ $yMid: 26;
 	}
 }
 
-
-#t5{
-	@include pos($x+20, 15);	
-	letter-spacing: -0.4px;
-	// font-size: 25px;
-	// opacity: 1;
-	p{
-		display: block;
-	}
-}
 
 // #phoneMain{
 // 	@include pos-scale(164, -34, 0.48);	
