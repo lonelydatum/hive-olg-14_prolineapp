@@ -106,6 +106,11 @@ img {
   image-rendering: -moz-crisp-edges;
 }
 
+.proline {
+  width: 318px;
+  height: 84px;
+}
+
 .outline {
   z-index: 99;
   width: inherit;
@@ -211,7 +216,7 @@ sup {
   font-size: 20px;
   width: 640px;
   height: 60px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 #t1 {
@@ -222,9 +227,9 @@ sup {
 }
 
 #t1 span {
-  -webkit-transform: translate(51px, -25px);
-  -ms-transform: translate(51px, -25px);
-  transform: translate(51px, -25px);
+  -webkit-transform: translate(49px, -24px);
+  -ms-transform: translate(49px, -24px);
+  transform: translate(49px, -24px);
   position: absolute;
   letter-spacing: -0.5px;
   clip: rect(0px, 150px, 51px, 0px);
@@ -268,11 +273,11 @@ sup {
 }
 
 #logo-app {
-  width: 38px;
-  height: 47px;
-  -webkit-transform: translate(310px, 8px);
-  -ms-transform: translate(310px, 8px);
-  transform: translate(310px, 8px);
+  width: 37px;
+  height: 46px;
+  -webkit-transform: translate(303px, 9px);
+  -ms-transform: translate(303px, 9px);
+  transform: translate(303px, 9px);
   position: absolute;
 }
 
@@ -308,9 +313,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(375px, -27px) scale(0.5, 0.5);
-  -ms-transform: translate(375px, -27px) scale(0.5, 0.5);
-  transform: translate(375px, -27px) scale(0.5, 0.5);
+  -webkit-transform: translate(375px, -31px) scale(0.52, 0.52);
+  -ms-transform: translate(375px, -31px) scale(0.52, 0.52);
+  transform: translate(375px, -31px) scale(0.52, 0.52);
   position: absolute;
 }
 
@@ -343,9 +348,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(42px, 10px) scale(0.4, 0.4);
-  -ms-transform: translate(42px, 10px) scale(0.4, 0.4);
-  transform: translate(42px, 10px) scale(0.4, 0.4);
+  -webkit-transform: translate(37px, 7px) scale(0.45, 0.45);
+  -ms-transform: translate(37px, 7px) scale(0.45, 0.45);
+  transform: translate(37px, 7px) scale(0.45, 0.45);
   position: absolute;
 }
 

@@ -21,7 +21,7 @@ $yMid: 20;
 	font-size: 20px;
 	width: 640px;
 	height: 60px;	
-	font-size: 25px;
+	font-size: 24px;
 	// color: red;
 }
 
@@ -29,7 +29,7 @@ $yMid: 20;
 	// opacity: 1;
 	@include pos($x, $yMid);
 	span{
-		@include pos(51, -25);
+		@include pos(49, -24);
 		letter-spacing: -0.5px;
 		clip: rect(0px,150px,51px,0px);
 		width: 160px;
@@ -68,9 +68,9 @@ $yMid: 20;
 
 
 #logo-app{
-	width: 38px;
-	height: 47px;
-	@include pos(310, 8);
+	width: 37px;
+	height: 46px;
+	@include pos(303, 9);
 }
 
 
@@ -103,7 +103,7 @@ $yMid: 20;
 
 
 #phoneMain{
-	@include pos-scale(375, -27, 0.5);	
+	@include pos-scale(375, -31, 0.52);	
 	#phone-mask{
 		width: 275px;
 		height: 565px;
@@ -121,7 +121,7 @@ $yMid: 20;
 		height: 222px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(42, 10, .4);
+			@include pos-scale(37, 7, .45);
 		}
 		font-size: 20px;
 		p{
