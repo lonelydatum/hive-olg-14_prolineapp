@@ -293,9 +293,9 @@ sup {
 }
 
 #legal-button {
-  -webkit-transform: translate(12px, 19px);
-  -ms-transform: translate(12px, 19px);
-  transform: translate(12px, 19px);
+  -webkit-transform: translate(12px, 25px);
+  -ms-transform: translate(12px, 25px);
+  transform: translate(12px, 25px);
   position: absolute;
 }
 
