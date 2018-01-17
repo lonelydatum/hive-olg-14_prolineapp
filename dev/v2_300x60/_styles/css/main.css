@@ -101,6 +101,9 @@ img {
   vertical-align: top;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
+  image-rendering: optimizeQuality;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
 }
 
 .outline {
@@ -204,6 +207,10 @@ sup {
   /* IE6-9 */
 }
 
+.frame1 {
+  opacity: 1;
+}
+
 #banner {
   width: 300px;
   height: 60px;
@@ -268,11 +275,20 @@ sup {
 }
 
 #legal-button {
-  display: none;
+  font-size: 50%;
+  -webkit-transform: translate(4px, 31px);
+  -ms-transform: translate(4px, 31px);
+  transform: translate(4px, 31px);
+  position: absolute;
 }
 
 #legal-copy {
-  width: 586px;
+  font-size: 6px;
+  line-height: 7px;
+  padding: 0 2px;
+  width: 285px;
+  height: 100%;
+  z-index: 99;
 }
 
 #phoneMain {
@@ -311,9 +327,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(42px, 10px) scale(0.4, 0.4);
-  -ms-transform: translate(42px, 10px) scale(0.4, 0.4);
-  transform: translate(42px, 10px) scale(0.4, 0.4);
+  -webkit-transform: translate(21px, 11px) scale(0.55, 0.55);
+  -ms-transform: translate(21px, 11px) scale(0.55, 0.55);
+  transform: translate(21px, 11px) scale(0.55, 0.55);
   position: absolute;
 }
 

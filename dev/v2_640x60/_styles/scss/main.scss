@@ -14,14 +14,14 @@
 	// opacity: 0;
 }
 
-$x: 136;
-$yMid: 17;
+$x: 144;
+$yMid: 20;
 
 #banner{
 	font-size: 20px;
 	width: 640px;
 	height: 60px;	
-	font-size: 27px;
+	font-size: 25px;
 	// color: red;
 }
 
@@ -29,7 +29,7 @@ $yMid: 17;
 	// opacity: 1;
 	@include pos($x, $yMid);
 	span{
-		@include pos(57, -27);
+		@include pos(51, -25);
 		letter-spacing: -0.5px;
 		clip: rect(0px,150px,51px,0px);
 		width: 160px;
@@ -37,21 +37,40 @@ $yMid: 17;
 }
 
 #t2{	
-	@include pos($x, $yMid - 13);	
+	@include pos($x, 6);	
 	letter-spacing: -0.5px;
 	// opacity: 1;
 }
 
 #t3{
-	@include pos($x, 29);	
+	@include pos($x, 31);	
 	letter-spacing: -0.5px;
 	// opacity: 1;
 }
 
 #t4{
-	@include pos($x, 29);	
+	@include pos($x, 31);	
 	letter-spacing: -0.5px;
 	// opacity: 1;
+}
+
+
+
+#t5{
+	@include pos($x, 6);	
+	letter-spacing: -0.4px;
+	// font-size: 25px;
+	// opacity: 1;
+	p{
+		display: block;
+	}
+}
+
+
+#logo-app{
+	width: 38px;
+	height: 47px;
+	@include pos(310, 8);
 }
 
 
@@ -63,11 +82,11 @@ $yMid: 17;
 
 #logo-playsmart{
 	width: 56px;
-	@include pos(20, 34);
+	@include pos(13, 34);
 }
 
 #legal-button{
-	@include pos(19, 8);
+	@include pos(12, 19);
 }
 
 #legal-copy{
@@ -82,11 +101,6 @@ $yMid: 17;
 }
 
 
-#logo-app{
-	width: 38px;
-	height: 47px;
-	@include pos(313, 8);
-}
 
 #phoneMain{
 	@include pos-scale(375, -27, 0.5);	
@@ -130,15 +144,7 @@ $yMid: 17;
 }
 
 
-#t5{
-	@include pos(140, $yMid - 14);	
-	letter-spacing: -0.4px;
-	// font-size: 25px;
-	// opacity: 1;
-	p{
-		display: block;
-	}
-}
+
 
 // #phoneMain{
 // 	@include pos-scale(319, -43, 0.81);

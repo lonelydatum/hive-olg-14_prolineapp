@@ -101,6 +101,9 @@ img {
   vertical-align: top;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
+  image-rendering: optimizeQuality;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
 }
 
 .outline {
@@ -208,20 +211,20 @@ sup {
   font-size: 20px;
   width: 468px;
   height: 60px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #t1 {
-  -webkit-transform: translate(85px, 21px);
-  -ms-transform: translate(85px, 21px);
-  transform: translate(85px, 21px);
+  -webkit-transform: translate(90px, 20px);
+  -ms-transform: translate(90px, 20px);
+  transform: translate(90px, 20px);
   position: absolute;
 }
 
 #t1 span {
-  -webkit-transform: translate(38px, -20px);
-  -ms-transform: translate(38px, -20px);
-  transform: translate(38px, -20px);
+  -webkit-transform: translate(41px, -22px);
+  -ms-transform: translate(41px, -22px);
+  transform: translate(41px, -22px);
   position: absolute;
   position: absolute;
   letter-spacing: -0.5px;
@@ -231,27 +234,39 @@ sup {
 }
 
 #t2 {
-  -webkit-transform: translate(85px, 10px);
-  -ms-transform: translate(85px, 10px);
-  transform: translate(85px, 10px);
+  -webkit-transform: translate(90px, 9px);
+  -ms-transform: translate(90px, 9px);
+  transform: translate(90px, 9px);
   position: absolute;
   letter-spacing: -0.5px;
 }
 
 #t3 {
-  -webkit-transform: translate(85px, 32px);
-  -ms-transform: translate(85px, 32px);
-  transform: translate(85px, 32px);
+  -webkit-transform: translate(90px, 32px);
+  -ms-transform: translate(90px, 32px);
+  transform: translate(90px, 32px);
   position: absolute;
   letter-spacing: -0.5px;
 }
 
 #t4 {
-  -webkit-transform: translate(85px, 32px);
-  -ms-transform: translate(85px, 32px);
-  transform: translate(85px, 32px);
+  -webkit-transform: translate(90px, 32px);
+  -ms-transform: translate(90px, 32px);
+  transform: translate(90px, 32px);
   position: absolute;
   letter-spacing: -0.5px;
+}
+
+#t5 {
+  -webkit-transform: translate(90px, 9px);
+  -ms-transform: translate(90px, 9px);
+  transform: translate(90px, 9px);
+  position: absolute;
+  letter-spacing: -0.4px;
+}
+
+#t5 p {
+  display: block;
 }
 
 #logo-olg {
@@ -275,6 +290,7 @@ sup {
   -ms-transform: translate(12px, 8px);
   transform: translate(12px, 8px);
   position: absolute;
+  display: none;
 }
 
 #legal-copy {
@@ -286,18 +302,17 @@ sup {
 }
 
 #logo-app {
-  width: 38px;
-  height: 47px;
-  -webkit-transform: translate(213px, 8px);
-  -ms-transform: translate(213px, 8px);
-  transform: translate(213px, 8px);
+  width: 35px;
+  -webkit-transform: translate(232px, 11px);
+  -ms-transform: translate(232px, 11px);
+  transform: translate(232px, 11px);
   position: absolute;
 }
 
 #phoneMain {
-  -webkit-transform: translate(280px, -23px) scale(0.45, 0.45);
-  -ms-transform: translate(280px, -23px) scale(0.45, 0.45);
-  transform: translate(280px, -23px) scale(0.45, 0.45);
+  -webkit-transform: translate(281px, -27px) scale(0.5, 0.5);
+  -ms-transform: translate(281px, -27px) scale(0.5, 0.5);
+  transform: translate(281px, -27px) scale(0.5, 0.5);
   position: absolute;
 }
 
@@ -355,18 +370,6 @@ sup {
   transform: translate(0px, 122px);
   position: absolute;
   letter-spacing: -0.2px;
-}
-
-#t5 {
-  -webkit-transform: translate(85px, 11px);
-  -ms-transform: translate(85px, 11px);
-  transform: translate(85px, 11px);
-  position: absolute;
-  letter-spacing: -0.4px;
-}
-
-#t5 p {
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

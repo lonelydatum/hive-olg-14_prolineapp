@@ -101,6 +101,9 @@ img {
   vertical-align: top;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
+  image-rendering: optimizeQuality;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
 }
 
 .outline {
@@ -208,48 +211,56 @@ sup {
   font-size: 20px;
   width: 970px;
   height: 90px;
-  font-size: 29px;
+  font-size: 38px;
 }
 
 #t1 {
-  -webkit-transform: translate(248px, 34px);
-  -ms-transform: translate(248px, 34px);
-  transform: translate(248px, 34px);
+  -webkit-transform: translate(229px, 33px);
+  -ms-transform: translate(229px, 33px);
+  transform: translate(229px, 33px);
   position: absolute;
 }
 
 #t1 span {
-  -webkit-transform: translate(59px, -29px);
-  -ms-transform: translate(59px, -29px);
-  transform: translate(59px, -29px);
+  -webkit-transform: translate(75px, -38px);
+  -ms-transform: translate(75px, -38px);
+  transform: translate(75px, -38px);
   position: absolute;
   letter-spacing: -0.5px;
-  clip: rect(0px, 150px, 51px, 0px);
-  width: 160px;
+  clip: rect(0px, 210px, 51px, 0px);
+  width: 210px;
 }
 
 #t2 {
-  -webkit-transform: translate(248px, 19px);
-  -ms-transform: translate(248px, 19px);
-  transform: translate(248px, 19px);
+  -webkit-transform: translate(229px, 9px);
+  -ms-transform: translate(229px, 9px);
+  transform: translate(229px, 9px);
   position: absolute;
   letter-spacing: -0.5px;
 }
 
 #t3 {
-  -webkit-transform: translate(248px, 47px);
-  -ms-transform: translate(248px, 47px);
-  transform: translate(248px, 47px);
+  -webkit-transform: translate(229px, 46px);
+  -ms-transform: translate(229px, 46px);
+  transform: translate(229px, 46px);
   position: absolute;
   letter-spacing: -0.5px;
 }
 
 #t4 {
-  -webkit-transform: translate(248px, 47px);
-  -ms-transform: translate(248px, 47px);
-  transform: translate(248px, 47px);
+  -webkit-transform: translate(229px, 46px);
+  -ms-transform: translate(229px, 46px);
+  transform: translate(229px, 46px);
   position: absolute;
   letter-spacing: -0.5px;
+}
+
+#t5 {
+  -webkit-transform: translate(229px, 9px);
+  -ms-transform: translate(229px, 9px);
+  transform: translate(229px, 9px);
+  position: absolute;
+  letter-spacing: -0.4px;
 }
 
 #logo-olg {
@@ -281,9 +292,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(528px, -40px) scale(0.72, 0.72);
-  -ms-transform: translate(528px, -40px) scale(0.72, 0.72);
-  transform: translate(528px, -40px) scale(0.72, 0.72);
+  -webkit-transform: translate(542px, -45px) scale(0.79, 0.79);
+  -ms-transform: translate(542px, -45px) scale(0.79, 0.79);
+  transform: translate(542px, -45px) scale(0.79, 0.79);
   position: absolute;
 }
 
@@ -305,7 +316,6 @@ sup {
 }
 
 #phoneMain #screen {
-  opacity: 0;
   width: 213px;
   height: 222px;
   -webkit-transform: translate(31px, 103px);
@@ -343,20 +353,11 @@ sup {
   letter-spacing: -0.2px;
 }
 
-#t5 {
-  -webkit-transform: translate(260px, 20px);
-  -ms-transform: translate(260px, 20px);
-  transform: translate(260px, 20px);
-  position: absolute;
-  letter-spacing: -0.4px;
-}
-
 #logo-app {
-  width: 43px;
-  height: 53px;
-  -webkit-transform: translate(442px, 23px);
-  -ms-transform: translate(442px, 23px);
-  transform: translate(442px, 23px);
+  width: 49px;
+  -webkit-transform: translate(474px, 18px);
+  -ms-transform: translate(474px, 18px);
+  transform: translate(474px, 18px);
   position: absolute;
 }
 
