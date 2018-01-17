@@ -316,6 +316,7 @@ sup {
 }
 
 #phoneMain #screen {
+  opacity: 0;
   width: 213px;
   height: 222px;
   -webkit-transform: translate(31px, 103px);
