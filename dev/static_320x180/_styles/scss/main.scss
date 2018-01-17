@@ -20,7 +20,7 @@
 	font-size: 20px;
 	width: 320px;
 	height: 180px;	
-	font-size: 22px;
+	font-size: 18px;
 }
 
 #legal-button{
@@ -30,7 +30,7 @@
 
 #t1{
 	// opacity: 1;
-	@include pos(94, 124);
+	@include pos(105, 125);
 	// @include pos(125, 25);
 	text-align: center;
 }
@@ -67,7 +67,7 @@
 	// display: none;
 
 	// @include pos(13, 45);
-	@include pos-scale(51, -62, 0.8);
+	@include pos-scale(51, -59, 0.8);
 	// @include pos(13, -46);
 	// @include pos(13, 190);
 

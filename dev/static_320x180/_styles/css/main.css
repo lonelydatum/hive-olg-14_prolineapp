@@ -220,7 +220,7 @@ sup {
   font-size: 20px;
   width: 320px;
   height: 180px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #legal-button {
@@ -232,9 +232,9 @@ sup {
 }
 
 #t1 {
-  -webkit-transform: translate(94px, 124px);
-  -ms-transform: translate(94px, 124px);
-  transform: translate(94px, 124px);
+  -webkit-transform: translate(105px, 125px);
+  -ms-transform: translate(105px, 125px);
+  transform: translate(105px, 125px);
   position: absolute;
   text-align: center;
 }
@@ -282,9 +282,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(51px, -62px) scale(0.8, 0.8);
-  -ms-transform: translate(51px, -62px) scale(0.8, 0.8);
-  transform: translate(51px, -62px) scale(0.8, 0.8);
+  -webkit-transform: translate(51px, -59px) scale(0.8, 0.8);
+  -ms-transform: translate(51px, -59px) scale(0.8, 0.8);
+  transform: translate(51px, -59px) scale(0.8, 0.8);
   position: absolute;
 }
 
