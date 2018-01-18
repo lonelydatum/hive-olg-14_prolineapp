@@ -288,9 +288,9 @@ sup {
 }
 
 #t5 {
-  -webkit-transform: translate(54px, 13px);
-  -ms-transform: translate(54px, 13px);
-  transform: translate(54px, 13px);
+  -webkit-transform: translate(54px, 12px);
+  -ms-transform: translate(54px, 12px);
+  transform: translate(54px, 12px);
   position: absolute;
   letter-spacing: -0.4px;
 }
@@ -307,6 +307,7 @@ sup {
 }
 
 #phoneMain #phone-mask {
+  display: none;
   width: 275px;
   height: 565px;
   overflow: hidden;
@@ -331,12 +332,13 @@ sup {
   transform: translate(31px, 103px);
   position: absolute;
   font-size: 20px;
+  background: transparent;
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(42px, 10px) scale(0.4, 0.4);
-  -ms-transform: translate(42px, 10px) scale(0.4, 0.4);
-  transform: translate(42px, 10px) scale(0.4, 0.4);
+  -webkit-transform: translate(18px, -20px) scale(0.62, 0.62);
+  -ms-transform: translate(18px, -20px) scale(0.62, 0.62);
+  transform: translate(18px, -20px) scale(0.62, 0.62);
   position: absolute;
 }
 
