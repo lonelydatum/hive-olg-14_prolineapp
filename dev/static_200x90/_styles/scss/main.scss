@@ -28,7 +28,7 @@ $yMid: 26;
 }
 
 #t5{
-	@include pos(12, 9);	
+	@include pos(12, 6);	
 	letter-spacing: -0.4px;
 	
 }
@@ -53,7 +53,7 @@ $yMid: 26;
 }
 
 #phoneMain{
-	@include pos-scale(34, 0, 0.51);	
+	@include pos-scale(31, -6, 0.55);	
 	#phone-mask{
 		width: 275px;
 		height: 565px;
@@ -71,7 +71,7 @@ $yMid: 26;
 		height: 222px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(42, 10, .4);
+			@include pos-scale(36, 5, .45);
 		}
 		font-size: 20px;
 		p{

@@ -223,9 +223,9 @@ sup {
 }
 
 #t5 {
-  -webkit-transform: translate(12px, 9px);
-  -ms-transform: translate(12px, 9px);
-  transform: translate(12px, 9px);
+  -webkit-transform: translate(12px, 6px);
+  -ms-transform: translate(12px, 6px);
+  transform: translate(12px, 6px);
   position: absolute;
   letter-spacing: -0.4px;
 }
@@ -255,9 +255,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(34px, 0px) scale(0.51, 0.51);
-  -ms-transform: translate(34px, 0px) scale(0.51, 0.51);
-  transform: translate(34px, 0px) scale(0.51, 0.51);
+  -webkit-transform: translate(31px, -6px) scale(0.55, 0.55);
+  -ms-transform: translate(31px, -6px) scale(0.55, 0.55);
+  transform: translate(31px, -6px) scale(0.55, 0.55);
   position: absolute;
 }
 
@@ -289,9 +289,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(42px, 10px) scale(0.4, 0.4);
-  -ms-transform: translate(42px, 10px) scale(0.4, 0.4);
-  transform: translate(42px, 10px) scale(0.4, 0.4);
+  -webkit-transform: translate(36px, 5px) scale(0.45, 0.45);
+  -ms-transform: translate(36px, 5px) scale(0.45, 0.45);
+  transform: translate(36px, 5px) scale(0.45, 0.45);
   position: absolute;
 }
 
