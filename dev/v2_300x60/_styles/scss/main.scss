@@ -96,7 +96,7 @@ $yMid: 26;
 }
 
 #phoneMain{
-	@include pos-scale(159, -23, 0.42);	
+	@include pos-scale(154, -30, 0.45);	
 	#phone-mask{
 		width: 275px;
 		height: 565px;
@@ -114,7 +114,7 @@ $yMid: 26;
 		height: 222px;
 		@include pos(31, 103);
 		#logo{
-			@include pos-scale(21, 11, 0.55);
+			@include pos-scale(12, 7, 0.6);
 		}
 		font-size: 20px;
 		p{

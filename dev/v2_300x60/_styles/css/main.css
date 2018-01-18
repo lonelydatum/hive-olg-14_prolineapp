@@ -301,9 +301,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(159px, -23px) scale(0.42, 0.42);
-  -ms-transform: translate(159px, -23px) scale(0.42, 0.42);
-  transform: translate(159px, -23px) scale(0.42, 0.42);
+  -webkit-transform: translate(154px, -30px) scale(0.45, 0.45);
+  -ms-transform: translate(154px, -30px) scale(0.45, 0.45);
+  transform: translate(154px, -30px) scale(0.45, 0.45);
   position: absolute;
 }
 
@@ -336,9 +336,9 @@ sup {
 }
 
 #phoneMain #screen #logo {
-  -webkit-transform: translate(21px, 11px) scale(0.55, 0.55);
-  -ms-transform: translate(21px, 11px) scale(0.55, 0.55);
-  transform: translate(21px, 11px) scale(0.55, 0.55);
+  -webkit-transform: translate(12px, 7px) scale(0.6, 0.6);
+  -ms-transform: translate(12px, 7px) scale(0.6, 0.6);
+  transform: translate(12px, 7px) scale(0.6, 0.6);
   position: absolute;
 }
 
